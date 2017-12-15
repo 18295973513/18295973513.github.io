@@ -227,6 +227,7 @@ p{
     text-transform: none;
 }
 .text-muted {
+/* 	text-align: center; */
     color: #868e96!important;
 }
 .timeline{
