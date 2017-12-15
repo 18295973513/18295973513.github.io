@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="iconfont/iconfont.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/iscroll.js"></script>
+        <script src="js/rem.js"></script>
+        <link rel="stylesheet" href="css/class-bj1.css">
+            <style>
+                body{
+                    overflow: hidden;
+                }
+                .iScrollHorizontalScrollbar{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    width: 10px;
+                    height: 100%;
+                }
+                .iScrollIndicator{
+                    width: 100%;
+                    height: 10px;
+                    background: #666;
+                }
+                #wrapper {
+                    position: absolute;
+                    z-index: 1;
+                    top: 44px;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: calc(100vh-44px);
+                    overflow: hidden;
+                }
+
+                #scroller {
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    height: calc(100vh-44px);
+                    transform: translateZ(0);
+                    user-select: none;
+                    text-size-adjust: none;
+                }
+            </style>
+    </head>
+    <body>
+    <header>
+        <a href="" class="fenleibox">分类
+    	</a>
+    	<a href="3-6class-bj2.html" class="bianji">编辑</a>
+    </header>
+    <div id="wrapper">
+    <div id="scroller"> 
+            <section class="searchbox">
+                    <a href="1-10sort.html" class="sousuobox">
+                	<div class="icon-sousuo"></div>
+                    </a>
+            	    <input type="text" placeholder="搜索分类名，如:旅游">
+            	<a href="" class="jiantou">
+            		<img src="img/jiantou1.png" alt="">
+            	</a>
+            </section>
+            <main>
+            	<div class="tuwen">
+            		    <div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (1).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            		    <div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (2).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            			<div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (3).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            		    <div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (4).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            			<div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (1).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            		    <div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (2).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            			<div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (3).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            		    <div class="img">
+            		       <a href="">
+            			      <img src="img/tuwen1 (4).png" alt="">
+                           </a>
+            			   <a href="" class="canle">
+            			      <div class="icon-shanchu2"></div>
+            		       </a>
+            		    </div>
+            	</div>
+            </main>
+        </div>
+    </div>
+    </body>
+</html>
+<script>
+
+ var myScroll = new IScroll('#wrapper', {
+    // scrollbars:'custom',
+    scrollbars: true,
+    mouseWheel: true,
+    interactiveScrollbars: true,
+    shrinkScrollbars: 'scale',
+    fadeScrollbars: true
+});
+
+</script>

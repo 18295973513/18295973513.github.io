@@ -1,0 +1,130 @@
+/*
+* @Author: yan
+* @Date:   2017-10-06 22:40:44
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-06 00:04:43
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	background: #f4f4f4;
+	/* background: white; */
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	background: #00a076;
+	color: #fff;
+	width: 100%;
+	height: 1.1rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.head-left{
+	width: 1.1rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color:#fff;
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	color: #fff;
+	line-height: 1.1em;
+	text-align: center;
+}
+.head-right{
+	width: 1.1rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-gerenzhongxinxia{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+}
+.list{
+	margin-top: 1.1em;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0.3em 0.2em;
+}
+.list li{
+	width: 3.45em;
+	height: 3.8em;
+	border: 0.01em solid #ccc;
+	border-radius: 0.5em;
+	background: white;
+	margin-bottom: 0.2em;
+}
+.list li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 0.79em;
+}
+.icon-yuebing39-copy{
+	font-family: "iconfont";
+	font-size: 1.26em;
+	text-align: center;
+	color: #343434;
+}
+.list span{
+	display: block;
+	font-size: 0.22em;
+	color: #343434;
+	text-align: center;
+	margin-top: 1.14em;
+}

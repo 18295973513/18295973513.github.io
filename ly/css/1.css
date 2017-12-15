@@ -1,0 +1,282 @@
+@import url('base.css');
+body,html,section,nav{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+body{
+	background-color: #f3f4f4;
+}
+ul,li,dl,ol,dt,dd{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+div{
+	margin: 0;
+    padding: 0;
+    outline: none;
+    display: block;
+}
+/* toubu */
+.header{	
+	position: relative;
+	padding: 0 .20rem;
+    height: .64rem;
+    background: #00a076;
+    color: #fff;
+    line-height: .64rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+.back>a{
+	display: block;
+	color:  #25d9b2;
+	font-size: .2rem;
+	line-height: .64rem;
+}
+.back{
+	width: 2.00rem;
+    display: flex;
+    justify-content: space-between;  
+}
+.user,.searchs{
+	position: relative;
+	/* float: right; */
+	height: 100%;
+	width: .30rem;
+}
+.user>a>img,.searchs>a{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -.15rem;
+	border-radius: 50%;
+	width: .30rem;
+	height: .30rem;
+	float: left;	
+	color: #fff;
+}
+.icon-sousuo{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .2rem;
+	line-height: .24rem;
+}
+.back .white{
+	color: #fff;
+}
+.datu{
+	width: 100%;
+	height: 1.63rem;
+}
+.datu a,.datu img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/* sousuo */
+.search{
+	height: .61rem;
+	box-sizing: border-box;
+	padding:.09rem .10rem;
+    /* border-bottom:.01rem solid #e6e8ea; */
+    background: #f3f4f4;
+
+}
+.search input[type=search]{
+	display: block;
+    border:.01rem solid #ced1d5;
+    font: .14rem Arial;
+    box-sizing: border-box;
+    padding-left: .60rem;
+    width: 100%;
+    height: .42rem;
+    line-height: .42rem;
+    border-radius:.04rem;
+    background: url("../img/search.svg") .36rem/.20rem .20rem no-repeat #fff;
+}
+/* 最近访问 */
+.qyshop-body{
+	margin-bottom: .1rem;
+}
+.zworld{
+	display: flex; 
+	flex-wrap: wrap;
+	background: #fff;
+}
+.zword1{
+	background-image: url("../img/zword1.svg");
+	background-size: 75px 55px;	
+}
+.zword3{
+	background-image: url("../img/zword3.svg");
+	background-size: 50px 60px;
+}
+.zword-flex{
+	flex: 0 0 50%;
+	width: 50%;
+	height: 80px;
+	box-sizing: border-box;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #e6e8ea;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.zc-flex:nth-child(odd) {
+    border-left-width: 0;
+}
+.zword1 h3 {
+    color: #5dcce7;
+}
+.zword3 h3 {
+    color: #ffbd56;
+}
+.zword-flex h3 {
+    padding: 12px 0 6px 8px;
+    font-size: 16px;
+    color: #fb9388;
+    line-height: 16px;
+}
+.zword-flex p {
+    padding-left: 8px;
+    color: #ced1d5;
+    font-size: 12px;
+    line-height: 12px;
+}
+.piao-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.piao-list li{
+	background: #fff;
+    flex: 0 0 33.33%;
+    width: 33.33%;
+    box-sizing: border-box;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #e6e8ea;
+}
+.piao-list li a {
+    display: block;
+    padding: 11px 0 11px 12px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #646464;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.piao-list li a img {
+    margin-right: 9px;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+/* 游记 */
+.youji{
+	display: block;
+	width: 100%;
+}
+.youji-box{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.youji-box>li,.youji-box>li>a{
+	width: 100%;
+	height: 3.06rem;
+	background: #fff;
+}
+.lv-pic{
+	width: 100%;
+	height: 1.6rem;
+	position: relative;
+}
+.lv-pic>img{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.xiao{
+	width: .40rem;
+	height: .25rem;
+	background: #03b087;
+	line-height: .25rem;
+	text-align: center;
+	color: #fff;
+	font-size: .14rem;
+	position: absolute;
+	left: 0;
+	top: .20rem;
+}
+.h4{
+	margin-top: .20rem;
+	color: #222;
+	font-size: .16rem;
+	text-align: center;
+}
+.span{
+	display: block;
+	margin-top: .15rem;
+	padding-left: .10rem;
+	padding-right: .10rem;
+	font-size: .14rem;
+	text-align: left;
+	color: #ced1d5;
+}
+.icon-mengwabaoxian,.icon-wawalian,.icon-036,.icon-wawa{
+	font-size: .32rem;
+	font-family: "iconfont";
+	text-align: center;
+	display: block;
+	margin-top: .10rem;
+	color: #ced1d5;
+}
+.lv-pic1{
+	position: relative;
+}
+body{
+	overflow: hidden;
+}
+.iScrollHorizontalScrollbar{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+}
+.iScrollIndicator{
+	width: 100%;
+	height: .10rem;
+	background: #666;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 64px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 64px);
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}

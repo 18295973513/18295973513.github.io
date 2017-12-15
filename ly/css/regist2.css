@@ -1,0 +1,321 @@
+@import url('base.css');
+body,html,section,nav{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+ul,li,dl,ol,dt,dd{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+div{
+	margin: 0;
+    padding: 0;
+    outline: none;
+    display: block;
+}
+.header{	
+	position: relative;
+	padding: 0 .20rem;
+    height: .64rem;
+    background: #00a076;
+    color: #fff;
+    line-height: .64rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+.back{
+	width: .20rem;
+    height: .17rem;
+    margin: 0 .32rem 0 0;
+    background: url('../img/black.svg') no-repeat;
+    background-size: 100%;
+}
+.center{
+	font-size: .2rem;
+}
+.right{
+	border:.01rem solid #fff;
+	line-height: .26rem;
+    border-radius:.03rem;
+    width: .48rem;
+    text-align: center;
+    font-size: .14rem;
+    color: #fff;
+    text-decoration: none;
+}
+/* 注意 */
+section{
+	background: linear-gradient(-30deg,#16b769,#03b087);
+	height: 600px;
+}
+.zhuyi{
+	padding: .30rem .20rem 0;
+    color: #fff;
+    font-size: .14rem;
+    opacity: .7;
+}
+.zhuyi>span{
+	text-decoration: underline;
+}
+/* zhuce登录 */
+.login{
+	display: flex;
+	color: #fff;
+	height: .42rem;
+	margin-top: .20rem;
+	line-height: .40rem;
+	text-align: center;
+}
+.selected{
+	width:50%; 
+	border-bottom:.02rem solid #fff;
+	font-size: .16rem;
+	color: #fff;
+}
+.dxin{
+	width:50%; 
+	border-bottom:.01rem solid #0AB27B;
+	font-size: .16rem;
+	color: #fff;
+}
+.login-box{
+	padding: .15rem .20rem .30rem;
+	color: #fff;
+	background: linear-gradient(-30deg,#16b769,#03b087);
+}
+.user{
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius:.04rem;
+	padding-left: .12rem;
+	margin-top: .20rem;
+	background: #39C299;
+}
+.user-pic{
+	background: url('../img/user-pic.svg') no-repeat;
+	width: .16rem;
+	height: .16rem;
+	background-size: 100%;
+}
+.pas-pic{
+	background: url('../img/pas.svg') no-repeat;
+	width: .16rem;
+	height: .16rem;
+	background-size: 100%;
+}
+.user .phone-user{
+	padding: 0 .10rem;
+    border: 0;
+    height: .40rem;
+    width: 100%;
+    outline: none;
+    font-size: .14rem;
+    background: #39C299;
+    color: #fff;
+}
+.forget{
+	text-align: right;
+    font-size: .14rem;
+    margin: .10rem 0 .20rem;
+}
+.login-btn{
+	box-sizing: border-box;
+    border-radius:.03rem;
+    display: block;
+    border: 0;
+    width: 100%;
+    height: .45rem;
+    line-height: .45rem;
+    text-align: center;
+    color: #0cbf79;
+    background: #fff;
+}
+.forw{
+	margin-top: .15rem;
+	text-align: center;
+	font-size: .14rem;
+	color: #fff;
+}
+.disanfang{
+	text-align: center;
+}
+.title{
+	margin-top: .70rem;
+	font-size: .14rem;
+}
+.app{
+	display: flex;
+	justify-content: center;
+	margin-top: .15rem;
+}
+.app-g{
+	width: .46rem;
+    height: .46rem;
+    background-size: 100%;
+    margin: 0 .20rem;
+}
+.qq{
+	background: url('../img/qq.svg') no-repeat;
+	background-size: 100%;
+	
+}
+.wbo{
+	background: url('../img/wbo.svg') no-repeat;
+	background-size: 100%;
+}
+.icon-weixin{
+	font-family: "iconfont";
+	font-size: .46rem;
+	display: block;
+}
+body{
+	overflow: hidden;
+}
+.iScrollHorizontalScrollbar{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+}
+.iScrollIndicator{
+	width: 100%;
+	height: 10px;
+	background: #666;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 64px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 64px);
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+.register{
+	padding: 0 .20rem;
+	font-size: .14rem;
+	color: #fff;
+}
+.phone{
+	display: flex;
+	width: 100%;
+    height: .40rem;
+    font-size: .14rem;
+    margin-top: .10rem;
+    padding:.03rem .10rem;
+    background: #3CC295;
+    border-radius:.04rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+.number{
+	padding: 0 .10rem;
+	font-family: sans-serif;
+	line-height: .38rem;
+	text-align: center;
+}
+.right-part{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.left{
+	height: .20rem;
+	width:.01rem;
+	background: #00a076;
+}
+.phone-text{
+	padding: 0 .10rem;
+	border: 0;
+	height: .40rem;
+	width: 100%;
+	outline: none;
+	font-size: .14rem;
+	box-sizing: border-box;
+	background: #3CC295;
+	color: #fff;
+}
+.yanzheng-pic{
+	margin-top: .20rem;
+	display: flex;
+	justify-content: space-between; 
+}
+.yanzheng-left{
+	display: flex;
+	width: 60%;
+	height: .40rem;
+	align-items: center;
+	border-radius:.04rem;
+	padding-left: .14rem;
+	background: #3CC295;
+}
+.yz-icon{
+	background: url('../img/pas.svg') no-repeat;
+	width: .14rem;
+    height: .16rem;
+    background-size: 100%;
+}
+.pic-yz{
+	box-sizing: border-box;
+    overflow: hidden;
+    padding: 0.07rem;
+    font-size: .14rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: #3CC295;
+}
+.vertify{
+	width: 2.00rem;
+	margin-left: .20rem;
+}
+.img-vertify{
+	display: block;
+	width: 100%;
+	height: .40rem;
+}
+.fasong{
+	width: 2.00rem;
+	display: block;
+	margin-left: .20rem;
+    text-align: center;
+    border-radius:.04rem;
+    border:.01rem solid #fff;
+    line-height: .38rem;
+    color: #fff;
+    background: #0DB477;
+    font-size: .14rem;
+}
+.login-btn{
+	margin-top: .40rem;
+	box-sizing: border-box;
+    border-radius:.03rem;
+    display: block;
+    border: 0;
+    width: 100%;
+    height: .40rem;
+    line-height: .40rem;
+    text-align: center;
+    color: #139858;
+    background: #fff;
+}

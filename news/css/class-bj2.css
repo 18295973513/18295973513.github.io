@@ -1,0 +1,154 @@
+/*
+* @Author: yan
+* @Date:   2017-08-05 15:01:17
+* @Last Modified by:   yan
+* @Last Modified time: 2017-08-05 15:26:28
+*/
+@import url('base.css');
+header{
+	width: 100%;
+	height: 0.51rem;
+	background: white;
+	border-bottom: 0.01rem solid #efefef;
+	display: flex;
+	justify-content: space-between;
+}
+.fenleibox{
+	display: block;
+	width: 0.4rem;
+	height: 0.51rem;
+	font-size: 0.2rem;
+	line-height: 0.51rem;
+	color: black;
+	margin-left: 1.57rem;
+}
+.bianji{
+	display: block;
+	width: 0.28rem;
+	height: 0.51rem;
+	font-size: 0.14rem;
+	line-height: 0.51rem;
+	color: #d46f75;
+	line-height: 0.51rem;
+	margin-right: 0.12rem;
+}
+.searchbox{
+	width: 100%;
+	height: 0.42rem;
+	background: #efeef4;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0.14rem;
+	position: relative;
+}
+/* .textbox{
+	width: 2.77rem;
+	height: 0.31rem;
+	align-self: center;
+
+} */
+input{
+	display: block;
+	width: 2.77rem;
+	height: 0.31rem;
+	border-radius: 0.05rem;
+	border: none;
+	align-self: center;
+	padding-left: 0.34rem;
+	color: #868686;
+}
+input:focus{
+    outline: none;
+}
+.sousuobox{
+	display: block;
+	width: 0.28rem;
+	height: 0.31rem;
+	background: white;
+	padding-left: 0.11rem;rem
+	border-radius: 0.05rem;
+    position: absolute;
+    top: 0.06rem;
+    left: 0.14rem;
+    border-radius: 0.05rem;
+}
+.icon-sousuo{
+	font-family: 'iconfont';
+	width: 0.16rem;
+	height: 0.31rem;
+	font-size: 0.2rem;
+	line-height: 0.31rem;
+	color: #bcbcbc;
+}
+.jiantou,.jiantou img{
+	display: block;
+	width: 0.44rem;
+	height: 0.42rem;
+	background: white;
+}
+main{
+	width: 100%;
+	background: white;
+}
+.tuwen{
+	width: 100%;
+	background: white;
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* .tuwen li{
+    width: 100%;
+    height: 1.73rem;
+    background: white;
+    margin-bottom: 0.04rem;
+} */
+.tuwen .img,.tuwen .img a:first-of-type{
+	display: block;
+	width: 1.72rem;
+	height: 1.72rem
+}
+.tuwen .img a:first-of-type img{
+	display: block;
+	width: 1.59rem;
+	height: 1.59rem;
+	margin: 0.08rem auto;
+}
+.tuwen .img a:first-of-type{
+	align-self: center;
+	margin-bottom: 0.04rem;
+}
+.img{
+	position: relative;
+}
+.img .canle{
+	display: block;
+	width: 0.15rem;
+	height: 0.15rem;
+	position: absolute;
+	background: white;
+	top: 0.04rem;
+	left: 1.55rem;
+	border-radius: 50%;
+}
+.icon-shanchu2{
+	width: 0.15rem;
+	height: 0.15rem;
+	border-radius: 50%;
+	background: white;
+	font-family: 'iconfont';
+	line-height: 0.15rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: black;
+}
+.ding,.ding img{
+	display: block;
+	width: 1.59rem;
+	height: 1.59rem;
+}
+.ding{
+	position: absolute;
+	top: 1.66rem;
+	left: 0.92rem;
+}

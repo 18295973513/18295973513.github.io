@@ -1,0 +1,127 @@
+/*
+* @Author: yan
+* @Date:   2017-10-06 23:06:38
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-06 00:02:47
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	/* background: #f4f4f4; */
+	background: white;
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	background: white;
+	/* background: #282828; */
+	width: 100%;
+	height: 1.1rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: 0.01em solid #ccc;
+	background: #00a076;
+	color: #fff;
+}
+.head-left{
+	width: 1.1rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	color: #fff;
+	line-height: 1.1em;
+	text-align: center;
+}
+.head-right{
+	width: 1.1rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #282828;
+}
+.list{
+	/* margin-bottom: 1.1em; */
+	width: 100%;
+	padding-left: 0.4em;
+}
+.list li{
+	width: 100%;
+	height: 2em;
+	border-bottom: 0.01em solid #ccc;
+}
+.list li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0.4em 0.7em 0.4em 0;
+}
+.title{
+	display: block;
+	font-size: 0.3em;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 0.38em;
+}
+.text{
+	display: block;
+	font-size: 0.22em;
+	color: #757575;
+}

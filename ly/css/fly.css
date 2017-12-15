@@ -1,0 +1,138 @@
+@import url('base.css');
+body,html,section,nav{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+body{
+	background-color: #f3f4f4;
+}
+ul,li,dl,ol,dt,dd{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+div{
+	margin: 0;
+    padding: 0;
+    outline: none;
+    display: block;
+}
+.header{	
+	position: relative;
+    padding: 0 .20rem;
+    height: .64rem;
+    background: #00a076;
+    color: #fff;
+    line-height: .64rem;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+.back{
+	width: .20rem;
+    height: .17rem;
+    margin: 0 .32rem 0 0;
+    background: url('../img/black.svg') no-repeat;
+    background-size: 100%;
+}
+.center{
+	font-size: .16rem;
+}
+.air{
+	padding-top:.20rem;
+	background-color: #fff;
+	border-width:.01rem 0;
+	border-style: solid;
+	border-color: #e6e8ea;
+}
+.air>h2{
+	margin-bottom: .13rem;
+	text-align: center;
+	font-size: .17rem;
+	font-weight: 700;
+	line-height: .24rem;
+}
+.choiceProduct-list {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: .15rem;
+    overflow: hidden;
+}
+.choiceProduct-list li {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: .15rem;
+    padding-bottom: .20rem;
+}
+.choiceProduct-list li .pic {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 66.66%;
+}
+.choiceProduct-list li .pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+.choiceProduct-list li h3 {
+    height: .38rem;
+    overflow: hidden;
+    margin-top:.08rem;
+    font-size: .15rem;
+    line-height: .19rem;
+    color: #1f2023;
+}
+.choiceProduct-list li .price {
+    margin-top:.06rem;
+    font-size: .11rem;
+    line-height: .18rem;
+    height: .18rem;
+    color: rgba(31,32,35,.4);
+}
+.choiceProduct-list li .price em {
+    font-size: .15rem;
+    color: #ff7467;
+}
+body{
+	overflow: hidden;
+}
+.iScrollHorizontalScrollbar{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+}
+.iScrollIndicator{
+	width: 100%;
+	height: 10px;
+	background: #666;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 64px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 64px);
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>帐号登录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/regist.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/rem.js"></script>	
+	<script src="js/swiper.js"></script>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="header">
+		<a href="index.html" class="back"></a>
+		<div class="center">登录</div>
+		<a href="zhuce.html" class="right">注册</a>
+	</header>
+	<div id="wrapper">
+	<div id="scroller"> 
+	<section>
+	<!-- zhuiyi -->
+		<div class="zhuyi"> 
+			根据国家网络安全法要求，穷游网将进行帐号实名制认证，即日起所有帐号需绑定手机号才可生效。
+		</div>
+	<!-- zhuce -->
+		<div class="login">
+			<a href="regist.html" class="selected">帐号登录</a>
+			<a href="regist2.html" class="dxin">短信快捷登录</a>
+		</div>
+		<div class="login-box">
+			<form action="">
+				<div class="user">
+					<label for="username" class="user-pic"></label>
+					<input type="text" placeholder="手机号/邮箱/用户名" maxlength="100" class="phone-user" id="username">
+				</div>
+				<div class="user">
+					<label for="password" class="pas-pic"></label>
+					<input type="password" placeholder="密码" maxlength="100" class="phone-user" id="password">
+				</div>
+				<a href="forget.html" class="forget">忘记密码</a>
+				<button type="submit" class="login-btn">登录</button>
+				<!-- <div class="forw">境外手机登录</div> -->
+				<div class="disanfang">
+					<div class="title">第三方帐号登录</div>
+					<div class="app">
+						<div class="qq app-g"></div>
+						<div class="icon-weixin app-g "></div>
+						<div class="wbo app-g"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	</div>
+	</div>
+</body>
+</html>
+<script>
+var myScroll = new IScroll('#wrapper', {
+		// scrollbars:'custom',
+		scrollbars: true,
+		mouseWheel: true,
+		interactiveScrollbars: true,
+		shrinkScrollbars: 'scale',
+		fadeScrollbars: true
+	});
+</script>

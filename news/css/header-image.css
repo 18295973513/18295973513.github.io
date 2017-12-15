@@ -1,0 +1,144 @@
+@import url(base.css);
+/*头部开始*/
+header{
+	width: 100%;
+	height: .51rem;
+	background: #f75b5c;
+	border-bottom: .01rem solid #fdd6d7;
+	display: flex;
+	justify-content: space-between;
+}
+.back{
+	display: block;
+	width: .64rem;
+	height: .5rem;
+	padding-left: .13rem;
+	display: flex;
+}
+.icon-jiantou2{
+	/*display: block;*/
+	/*width: .9rem;
+	height: .15rem;*/
+	line-height: .5rem;
+	font-family: 'iconfont';
+	font-size: .16rem;
+	color: #fdedee;
+}
+.fan{
+	display: block;
+	width: .4rem;
+	height: .5rem;
+	padding-left: .08rem;
+	text-align: left;
+	line-height: .5rem;
+	font-size: .12rem;
+	color: #fff5f6;
+}
+.reg{
+    width: .36rem;
+    height: .5rem;
+    color: #fff4f1;
+    font-size: .16rem;
+    line-height: .5rem;
+}
+.next{
+	display: block;
+	width: .9rem;
+	height: .5rem;
+	font-size: .12rem;
+	color: #f8f2e4;
+	line-height: .5rem;
+}
+/*头部结束*/
+
+/*底部开始*/
+.last{
+	width: 100%;
+	height: 5.5rem;
+	background: #f2f1f6;
+	position: relative;
+}
+.img-box{
+	width: 100%;
+	height: 4.58rem;
+	background: #f2f1f6;
+}
+.header-img{
+    width: 100%;
+    height: 1.39rem;
+    /*padding-left: 1.33rem;*/
+    padding-top: .37rem;
+}
+.yuan{
+	display: block;
+	width: .84rem;
+	height: .84rem;
+	border-radius: 50%;
+	background: #e1e0e5;
+	padding-top: .28rem;
+    padding-left: .28rem;	
+    margin:0 auto;
+}
+.icon-xiangji1{
+	font-family: 'iconfont';
+	font-size: .28rem;
+	color: #acacae;
+	display: block;
+	width: .36rem;
+	height: .28rem;
+	/*margin:0 auto;*/
+    
+    /*margin-left: .10rem;*/
+}
+.xb{
+	width: 100%;
+	height: .14rem;
+	padding-left: 1.17rem;
+	padding-right: 1.07rem;
+	font-size: .12rem;
+	line-height: .14rem;
+	color: #757577;
+	display: flex;
+	/*justify-content: space-between;*/
+
+}
+.xb input{
+	width: .22rem;
+	height: 100%;
+	border: none;
+}
+.xb input:focus{
+	outline: none;
+}
+.kong{
+	width: .27rem;
+}
+.guanlian{
+	/*margin-top: 2.8rem;*/
+	width: 100%;
+	height: 1.16rem;
+	background: #fff;
+
+}
+.kongbai{
+	width: 100%;
+	height: 2.8rem;
+}
+.guanlian li{
+	width: 100%;
+	height: .39rem;
+	border-top: .02rem solid #e7e7e9;
+	line-height: .39rem;
+	font-size: .12rem;
+	text-align: center;
+}
+.guanlian li:nth-child(3) a{
+	color: #fe6e77;
+}
+.guanlian li a{
+	display: block;
+	color: #313131;
+	width: 100%;
+	height: 100%;
+}
+/*底部结束*/

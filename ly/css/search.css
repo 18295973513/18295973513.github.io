@@ -1,0 +1,167 @@
+/*
+* @Author: yan
+* @Date:   2017-10-06 15:05:15
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-06 00:07:14
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	/* background: #f4f4f4; */
+	background: white;
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	background: black;
+	/* background: #282828; */
+	width: 100%;
+	height: 1.1rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: 0.01em solid #ccc;
+	background: #00a076;
+	color: #fff;
+}
+.head-left{
+	width: 6.3rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.sou{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.icon-sousuo{
+	position: absolute;
+	width: 1.65em;
+	height: 100%;
+	border-right: 0.01em solid #fff9f9;
+	font-family: "iconfont";
+	font-size: 0.2em;
+	color: #666;
+	top: 0;
+	left: 0;
+	line-height: 1.8em;
+	text-align: center;
+}
+input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding-left: 1.7em;
+	border-radius: 0.4em;
+	font-size: 0.2em;
+}
+input:focus{
+	outline: none;
+}
+.head-right{
+	width: 1.2rem;
+	height: 100%;
+	padding: 0 0.12em;
+	line-height: 1.1rem;
+}
+.head-right a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.head-right a span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.28em;
+	color: white;
+}
+.gus{
+	margin-top: 1.3em;
+	width: 100%;
+	height: 1.1em;
+	padding: 0.35em 0.3em 0;
+}
+.gus p{
+	font-size: 0.34em;
+	color: #999;
+}
+.list{
+	/* margin-top: 0.2em; */
+	width: 100%;
+}
+.list li{
+	width: 100%;
+	height: 1.5em;
+	border-bottom: 0.01em solid #d9d9d9;
+	padding: 0.3em 0.3em;
+}
+.list li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+.list .pic{
+	align-self: center;
+	width: 0.9em;
+	height: 0.9em;
+	margin-right: 0.23em;
+}
+.pic>img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.list .text{
+	width: 6em;
+	align-self: center;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.list .text span{
+	display: block;
+	height: 100%;
+	font-size: 0.4em;
+	color: #2c1d1d;
+	line-height: 2.5em;
+	text-align: left;
+}
+.icon-jinru{
+	font-family: "iconfont";
+}

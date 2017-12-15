@@ -1,0 +1,41 @@
+
+@mixin perwidth($wid){
+	width:$wid;
+	height:$wid;
+}
+@mixin sty{
+	height: auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+@mixin pad{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.container{	
+	margin-left: auto;
+	margin-right: auto;
+	@include pad;
+	@include sty;
+}
+.container-fluid{
+	@extend .container;
+}
+.row{
+	@include sty;
+	&::before{
+		content: "";
+		display: block;
+		@include perwidth(0);
+		line-height: 0;
+		clear: both;
+	}
+	&::after{
+		@extend ::before;
+	}
+}
+[class*="col-"]{
+	float: left;
+	@include pad;
+	box-sizing: border-box;
+}

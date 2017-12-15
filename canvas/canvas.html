@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绘制图形</title>
+
+	<style>
+		canvas{
+			border:1px solid #000;
+		}
+		.function{
+			width: 800px;
+			height: auto;
+			margin: 0 auto 20px auto;
+		}
+		.active{
+			border:1px solid red;
+		}
+		button{
+			width: 110px;
+			height: 30px;
+			margin-top: 10px;
+		}
+		#n{
+			width: 50px;
+		}
+		input{
+			width: 46px;
+		}
+	</style>
+</head>
+<body>
+	<section class="function">
+		<div class="huaban">	
+			
+			<input type="color">
+			<input type="text" id="n" value="3">
+			<button type="button" id="drawLine">画线</button>
+			<button type="button" id="drawStrokeRect">画轮廓矩形</button>
+			<button type="button" id='drawFillRect'>画填充矩形</button>
+			<button type="button" id='drawStrokePoly'>画轮廓多边形</button>
+			<button type="button" id='drawFillPoly'>画填充多边形</button>
+			<button type="button" id='drawLinearRect'>画渐变填充矩形</button>
+			<button type="button" id='drawFillCircle'>画填充圆</button>
+			<button type="button" id='drawStrokeCircle'>画轮廓圆</button>
+			<button type="button" id='drawRadialCircle'>画渐变圆</button>
+			<button type="button" id='drawText'>文字</button>
+			<button type="submit">退一步</button>	
+			<button type="button" id="drawEase">橡皮擦</button>
+			<button type="reset">一键清空</button>
+		</div>
+		<br>
+		<canvas width="800" height="400">
+			
+		</canvas>
+		
+	</section>
+	
+</body>
+</html>
+<script>
+
+	var canvas=document.querySelector('canvas');//获取画板
+	var paint=canvas.getContext('2d');//开启绘画功能
+	var n=3;//边数
+
+	var nobj=document.querySelector('#n');
+	nobj.onchange=function(){
+		n=this.value;
+	}
+	
+	//后退按钮设置
+	var arr=[];
+	var btn=document.querySelector('button[type=submit]');
+	btn.onclick=function(){
+		arr.pop();
+		if(arr.length>=1){
+			var imgdata=arr[arr.length-1];
+			paint.putImageData(imgdata,0,0);
+		}else{
+			paint.clearRect(0,0,canvas.width,canvas.height);
+			alert('不能后退了!');	
+			return;
+		}
+	}
+	// 颜色板
+	var colorobj=document.querySelector('input[type=color]');
+	var color='#000';
+	colorobj.onchange=function(){
+		color=this.value;
+	}
+
+	//线、矩形、轮廓按钮设置
+	var type='drawLine';
+	var typebtn=document.querySelectorAll('button[id]');
+	typebtn.forEach( (value)=>{
+		value.onclick=function(){
+			type=this.id;
+			typebtn.forEach(value=>{
+				value.classList.remove('active');
+			});
+			this.classList.add('active');
+
+		}
+	});
+
+
+	
+	class Draw{
+		constructor(context){
+			this.color = color;
+			this.font='20px 宋体';
+			this.lineWidth=1;
+			this.paint=context;
+		}
+		drawLine(x1,y1,x2,y2){
+			this.paint.beginPath();
+			this.paint.moveTo(x1,y1);
+			this.paint.lineTo(x2,y2);
+			this.paint.strokeStyle=color;
+			this.paint.lineWidth=this.lineWidth;
+			this.paint.stroke();
+		}
+		drawStrokeRect(x1,y1,x2,y2){
+			this.paint.strokeStyle=color;
+			this.paint.strokeRect(x1,y1,x2-x1,y2-y1);
+		}
+		drawFillRect(x1,y1,x2,y2){
+			this.paint.fillStyle=color;
+			this.paint.fillRect(x1,y1,x2-x1,y2-y1);
+			this.paint.shadowBlur='10';//模糊程度
+			this.paint.shadowColor='yellow';
+			this.paint.shadowoffsetX=0;
+			this.paint.shadowoffsetY=0;//偏移
+		}
+		drawFillPoly(x1,y1,x2,y2){
+			this.paint.beginPath();
+			var ran=360/n;//角度
+			var r=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+			for(var i=0;i<n;i++){
+				this.paint.lineTo(x1+Math.cos((i*ran+45)*(Math.PI/180))*r,y1+Math.sin((i*ran+45)*(Math.PI/180))*r);
+			}
+
+			this.paint.closePath();
+			this.paint.fillStyle=color;
+			this.paint.fill();
+		}
+		drawStrokePoly(x1,y1,x2,y2){
+			this.paint.beginPath();
+			var ran=360/n;//角度
+			var r=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+			for(var i=0;i<n;i++){
+				this.paint.lineTo(x1+Math.cos((i*ran+45)*(Math.PI/180))*r,y1+Math.sin((i*ran+45)*(Math.PI/180))*r);
+			}
+			this.paint.closePath();
+			this.paint.strokeStyle=color;
+			this.paint.stroke();
+		}
+		drawLinearRect(x1,y1,x2,y2){
+			var linear=this.paint.createLinearGradient(x1,y1,x2,y1);
+			linear.addColorStop(0,'red');
+			linear.addColorStop(.2,'orange');
+			linear.addColorStop(.4,'yellow');
+			linear.addColorStop(.6,'green');
+			linear.addColorStop(.8,'blue');
+			linear.addColorStop(1,'purple');
+			this.paint.fillStyle=linear;
+			this.paint.fillRect(x1,y1,x2-x1,y2-y1);
+		}
+		drawFillCircle(x1,y1,x2,y2){
+			var r=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+			this.paint.beginPath();
+			this.paint.arc(x1,y1,r,0,2*Math.PI);
+			this.paint.fillStyle=color;
+			this.paint.fill();
+		}
+		drawStrokeCircle(x1,y1,x2,y2){
+			var r=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+			this.paint.beginPath();
+			this.paint.arc(x1,y1,r,0,2*Math.PI);
+			this.paint.strokeStyle=color;
+			this.paint.stroke();
+		}
+		drawRadialCircle(x1,y1,x2,y2){
+			var r=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+			this.paint.beginPath();
+			var radial=paint.createRadialGradient(x1,y1,0,x1,y1,r);
+			radial.addColorStop(0,'pink');
+			radial.addColorStop(.5,'yellow');
+			radial.addColorStop(1,'red');
+			this.paint.arc(x1,y1,r,0,Math.PI*2);
+			this.paint.fillStyle=radial;
+			this.paint.fill();
+		}
+		drawText(x1,y1){
+			var str=window.prompt('请输入文字');
+			if(str){
+				this.paint.font="40px 宋体";
+				this.paint.fillStyle=color;
+				this.paint.fillText(str,x1,y1); 
+			}
+		}
+		drawEase(x1,y1,x2,y2){
+			this.paint.clearRect(x1,y1,x2-x1,y2-y1)
+		}
+
+	}
+	var newobj=new Draw(paint);
+	//画板开始
+	canvas.onmousedown=function(e){
+		let ox=e.offsetX;
+		let oy=e.offsetY;
+		canvas.onmousemove=function(e){
+			let nx=e.offsetX;
+			let ny=e.offsetY;
+			paint.clearRect(0,0,canvas.width,canvas.height);
+
+			if(arr.length>=1){
+				var imgdata=arr[arr.length-1];
+				paint.putImageData(imgdata,0,0);
+			}
+			switch(type){
+	            case "drawLine":
+	                newobj.drawLine(ox,oy,nx,ny);break;
+	            case "drawStrokeRect":
+	                newobj.drawStrokeRect(ox,oy,nx,ny);break;
+	            case "drawFillRect":
+	                newobj.drawFillRect(ox,oy,nx,ny);break;
+	            case "drawFillPoly":
+	                newobj.drawFillPoly(ox,oy,nx,ny);break;
+	            case "drawStrokePoly":
+	                newobj.drawStrokePoly(ox,oy,nx,ny);break;
+	            case "drawLinearRect":
+	                newobj.drawLinearRect(ox,oy,nx,ny);break;
+	            case "drawFillCircle":
+	                newobj.drawFillCircle(ox,oy,nx,ny);break;
+	            case "drawStrokeCircle":
+	                newobj.drawStrokeCircle(ox,oy,nx,ny);break;
+	            case "drawRadialCircle":
+	           		newobj.drawRadialCircle(ox,oy,nx,ny);break;
+	           	case "drawEase":
+	           		newobj.drawEase(ox,oy,nx,ny);
+	           			break;
+        	}
+		}
+		canvas.onmouseup=function(e){
+			if(type=='drawText'){
+				newobj.drawText(ox,oy);
+			}
+			let img=paint.getImageData(0,0,canvas.width,canvas.height);
+			arr.push(img);
+			canvas.onmousemove=null;
+		}
+	}
+	var kong=document.querySelector('button[type=reset]');
+	kong.onclick=function(){
+		arr.length=0;
+		paint.clearRect(0,0,canvas.width,canvas.height);
+	}
+	// var i=0;
+	// function circle(){
+	// 	paint.clearRect(0,0,canvas.width,canvas.height);
+	// 	i++;
+	// 	paint.beginPath();
+	// 	paint.lineWidth=10;
+	// 	paint.arc(100,100,50,0,Math.PI*2/100*i);
+	// 	paint.stroke();
+	// 	paint.font = '20px 宋体';
+	// 	paint.textAlign = 'center';
+	// 	paint.textBaseline='middle';
+	// 	paint.lineWidth=1;
+	// 	paint.strokeText(i+'%',100,100);
+	// 	if(i==100){
+	// 		clearInterval(t);
+	// 	}
+	// }
+	// var t=setInterval(circle,10)
+
+
+	// var i=0;
+	// var t;
+	// function circle(){
+	// 	clearInterval(t);
+	// 	paint.clearRect(0,0,canvas.width,canvas.height);
+	// 	i++;
+	// 	paint.beginPath();
+	// 	paint.lineWidth=10;
+	// 	paint.arc(100,100,50,0,Math.PI*2/100*i);
+	// 	paint.stroke();
+	// 	paint.font = '20px 宋体';
+	// 	paint.textAlign = 'center';
+	// 	paint.textBaseline='middle';
+	// 	paint.lineWidth=1;
+	// 	paint.strokeText(i+'%',100,100);
+	// 	t=setInterval(circle,10)
+	// 	if(i==100){
+	// 		clearInterval(t);
+	// 	}
+	// }
+	// circle();
+
+
+
+	// var i=0;
+	// var t;
+	// function circle(){
+	// 	paint.clearRect(0,0,canvas.width,canvas.height);
+	// 	i++;
+	// 	paint.beginPath();
+	// 	paint.lineWidth=10;
+	// 	paint.arc(100,100,50,0,Math.PI*2/100*i);
+	// 	paint.stroke();
+	// 	paint.font = '20px 宋体';
+	// 	paint.textAlign = 'center';
+	// 	paint.textBaseline='middle';
+	// 	paint.lineWidth=1;
+	// 	paint.strokeText(i+'%',100,100);
+	// 	var t=window.requestAnimationFrame(circle);//根据浏览器刷新频率来决定，浏览器每次刷新之前都会执行调用circle
+	// 	if(i==100){
+	// 		window.cancelAnimationFrame(t);
+	// 	}
+	// }
+	// circle();
+
+
+// 数字增长
+	// var i=0;
+	// function circle() {
+	// 	i++;
+	// 	paint.clearRect(0,0,canvas.width,canvas.height);
+	// 	paint.beginPath();
+	// 	paint.arc(100,100,50,0,Math.PI*2/100*i);
+	// 	paint.lineWidth=10;
+	// 	paint.stroke();
+	// 	paint.font = '20px 宋体';
+	// 	paint.textAlign = 'center';
+	// 	paint.textBaseline='middle';
+	// 	paint.lineWidth=1;
+	// 	paint.strokeText(i+'%',100,100);
+	// 	var t=window.requestAnimationFrame(circle);
+	// 	if(i==100){
+	// 		cancelAnimationFrame(t);
+	// 	}
+	// }
+	// circle();
+
+	//画板结束
+
+
+
+
+</script>

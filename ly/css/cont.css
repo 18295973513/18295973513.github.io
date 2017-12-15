@@ -1,0 +1,236 @@
+/*
+* @Author: yan
+* @Date:   2017-10-05 22:07:25
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-06 00:05:33
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	background: #f4f4f4;
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	background: #282828;
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: #00a076;
+	color: #fff;
+}
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+}
+.head-mid{
+	width: 2.4rem;
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	color: white;
+	line-height: 0.96em;
+	text-align: center;
+}
+.head-right{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+}
+.wenzhang{
+	/* margin-top: 0.96em; */
+	padding: 0.45em 0.52em 0.9em;
+	background: white;
+}
+.wenzhang .title{
+	text-align: left;
+	font-size: 0.48em;
+	margin-bottom: 0.58em;
+}
+.wenzhang .s-title{
+	text-align: left;
+	font-size: 0.36em;
+	color: #ed323c;
+	margin-bottom: 0.48em;
+}
+.wenzhang .act{
+	font-size: 0.26rem;
+	color: #666;
+	line-height: 1.76em;
+}
+.foot{
+	width: 100%;
+	height: 3.3em;
+	background: #f7f7f7;
+	padding: 0 0.52em 0;
+}
+.foot-h{
+	height: 1em;
+	width: 100%;
+	padding-top: 0.38em;
+	border-bottom: 0.03em solid #dfdfdf;
+}
+.foot-h a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.foot-h a div{
+	font-size: 0.3em;
+	color: #5e5d58;
+}
+.foot-h a .icon-jinru{
+	font-size: 0.4em;
+	color: #5e5d58;
+	font-family: "iconfont";
+}
+.foot-a{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0.24em;
+}
+.foot-a .icon-yuebing39-copy{
+	font-family: "iconfont";
+	font-size: 1em;
+}
+.foot-dec{
+	padding-top: 0.05em;
+	width: 4em;
+	height: 100%;
+}
+.foot-dec span{
+	display: block;
+	font-size: 0.28em;
+	color: #646464;
+	margin-bottom: 0.19em;
+}
+.foot-dec p{
+	font-size: 0.24em;
+	color: #999;
+}
+.ping{
+	width: 100%;
+	height: 1em;
+	background: white;
+	padding: 0 0.52em;
+}
+.ping a{
+	height: 1em;
+	width: 100%;
+	padding-top: 0.38em;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 0.03em solid #dfdfdf;
+}
+.ping a div{
+	font-size: 0.3em;
+	color: #5e5d58;
+}
+.ping a .icon-jinru{
+	font-size: 0.4em;
+	color: #5e5d58;
+	font-family: "iconfont";
+}
+.pinglun{
+	width: 100%;
+	height: 1.84em;
+	background: white;
+	padding: 0.3em;
+	border-bottom: 0.03em solid #dfdfdf;
+}
+.p-text{
+	display: flex;
+	justify-content: flex-start;
+}
+.p-text .icon-yuebing39-copy{
+	font-family: "iconfont";
+	font-size: 1em;
+	margin-right: 0.3em;
+}
+.p-text .icon-yuebing39-copy p{
+	font-size: 0.2em;
+	color: #535353;
+	text-align: center;
+}
+.p-word p:first-of-type{
+	font-size: 0.28em;
+	color: #535353;
+	margin-bottom: 2.2em;
+}
+.p-word p:last-of-type{
+	font-size: 0.28em;
+	color: #999;
+}
+.send{
+	width: 100%;
+	height: 1em;
+	background: white;
+}
+.send a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.34em;
+	text-align: center;
+	line-height: 3em;
+	color: #f05a62;
+}

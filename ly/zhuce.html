@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/zhuce.css">
+	<script src="js/rem.js"></script>	
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+	<header class="header">
+		<a href="regist.html" class="back"></a>
+		<div class="center">注册</div>
+		<a href="" class="right"></a>
+	</header>
+	<section>
+		<div class="kong"></div>
+		<div class="register">
+			<form action="form.php">
+				<div class="phone">
+					<div class="left-part">
+						<div class="number">+86</div>
+					</div>
+					<div class="right-part">
+						<div class="left"></div>
+						<div class="telphone">
+							<input type="text" placeholder="输入您的手机号码" maxlength="11" class="phone-text">
+						</div>
+					</div>
+				</div>
+				<div class="yanzheng-pic">
+					<div class="yanzheng-left">
+						<label for="imgvertify" class="yz-icon"></label>
+						<input type="text" placeholder="图片验证码" id="imgvertify" class="pic-yz">
+					</div>
+					<div class="vertify">
+						<img src="img/yzm.png" alt="" class="img-vertify">
+					</div>
+				</div>
+				<div class="yanzheng-pic">
+					<div class="yanzheng-left">
+						<label for="imgvertify" class="yz-icon"></label>
+						<input type="text" placeholder="短信验证码" id="imgvertify" class="pic-yz">
+					</div>
+					<a href="#" class="fasong">发送验证码</a>
+				</div>
+				<a href="#" class="login-btn">立即注册</a>
+			</form>
+		</div>
+	</section>
+</body>
+</html>

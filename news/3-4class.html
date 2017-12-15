@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页分类</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/class.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/rem.js"></script>
+		<style>
+			body{
+				overflow: hidden;
+			}
+			.iScrollHorizontalScrollbar{
+			    position: absolute;
+			    left: 0;
+			    right: 0;
+			    width: 10px;
+			    height: 100%;
+			}
+			.iScrollIndicator{
+			    width: 100%;
+			    height: 10px;
+			    background: #666;
+			}
+			#wrapper {
+				position: absolute;
+	            z-index: 1;
+	            top: 44px;
+	            bottom: 0;
+	            left: 0;
+	            width: 100%;
+	            height: calc(100vh-44px);
+	            overflow: hidden;
+			}
+
+			#scroller {
+	            position: absolute;
+	            z-index: 1;
+	            width: 100%;
+	            height: calc(100vh-44px);
+	            transform: translateZ(0);
+	            user-select: none;
+	            text-size-adjust: none;
+	        }
+		</style>
+</head>
+<body>
+<!-- 头部开始 -->
+<header>
+	<div class="leibie">分类</div>
+	<a href="3-5class-bj1.html" class="bianji">编辑</a>
+</header>
+<!-- 头部结束 -->
+<!-- 导航开始 -->
+<div id="wrapper">
+<div id="scroller"> 
+	<nav>
+		<div class="search-box">
+			<div class="sousuo-pic">
+						<a href="1-10sort.html" class="icon-sousuo2"></a>
+			</div>
+			<div class="sousuo-zi">
+				<input type="text" placeholder="搜索分类名，如:旅游">
+			</div>
+		</div>
+		<div class="jiantou">
+				<div class="icon-arrow-up"></div>
+			</div>
+	</nav>
+<!-- 导航结束 -->
+<!-- 内容开始 -->
+	<main>
+		<ul class="first">
+			<li>
+				<a href="">
+					<img src="img/class-1.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/class-2.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="first">
+			<li>
+				<a href="">
+					<img src="img/class-3.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/class-4.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="first">
+			<li>
+				<a href="">
+					<img src="img/class-1.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/class-2.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="first">
+			<li>
+				<a href="">
+					<img src="img/class-3.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/class-4.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="first">
+			<li>
+				<a href="">
+					<img src="img/class-3.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/class-4.png" alt="">
+				</a>
+			</li>
+		</ul>
+	</main>
+	</div>
+	</div>
+<!-- 内容结束 -->
+</body>
+</html>
+<script>
+
+ var myScroll = new IScroll('#wrapper', {
+    // scrollbars:'custom',
+    scrollbars: true,
+    mouseWheel: true,
+    interactiveScrollbars: true,
+    shrinkScrollbars: 'scale',
+    fadeScrollbars: true
+});
+
+</script>

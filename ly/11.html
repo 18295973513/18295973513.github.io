@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>社区</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/11.css">
+	<script src="js/rem.js"></script>	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	
+	<script src="js/swiper.js"></script>
+	
+</head>
+<body>
+	<!-- 头部 -->
+		<header class="header">
+			<div class="searchs">
+				<a href="">
+					<div class="icon-sousuo"></div>
+				</a>
+			</div>
+			<div class="back">
+				<a href="index.html">推荐</a>
+				<a href="2.html">目的地</a>
+				<a href="3.html" class="white">社区</a>
+			</div>
+			<div class="user">
+				<a href="my.html">
+					<img src="img/user.svg" alt="">
+				</a>
+			</div>
+		</header>
+	<!-- 版面开始 -->
+		<div class="login">
+			<a href="3.html" class="dxin">推荐</a>
+			<a href="11.html" class="selected">进入版面</a>
+		</div>
+	<!-- neir -->
+	<div id="wrapper">
+	<div id="scroller"> 
+		<section class="city">
+		
+			<div class="city-right">
+				<ul class="city-list">
+					<li>
+					<a href="10.html">
+						<div class="list-left">
+							<img src="img/author.jpg" alt="">
+						</div>
+						<div class="list-right">
+							<div class="wda">
+								<span>问答</span>
+								<div>
+									<span class="icon-pinglun"></span>999999+
+								</div>
+							</div>
+							<div class="help">
+								在这里让我们帮助大家
+							</div>
+							
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="city-list">
+					<li>
+					<a href="10.html">
+						<div class="list-left">
+							<img src="img/user4.jpg" alt="">
+						</div>
+						<div class="list-right">
+							<div class="wda">
+								<span>签证</span>
+								<div>
+									<span class="icon-pinglun"></span>74665
+								</div>
+							</div>
+							<div class="help">
+								出发旅行第一步
+							</div>
+							
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="city-list">
+					<li>
+					<a href="10.html">
+						<div class="list-left">
+							<img src="img/user5.jpg" alt="">
+						</div>
+						<div class="list-right">
+							<div class="wda">
+								<span>日本</span>
+								<div>
+									<span class="icon-pinglun"></span>26267
+								</div>
+							</div>
+							<div class="help">
+								樱花与刺身
+							</div>
+							
+						</div>
+					</a>
+					</li>
+				</ul>
+				<ul class="city-list">
+					<li>
+					<a href="10.html">
+						<div class="list-left">
+							<img src="img/user2.jpg" alt="">
+						</div>
+						<div class="list-right">
+							<div class="wda">
+								<span>美国</span>
+								<div>
+									<span class="icon-pinglun"></span>49863
+								</div>
+							</div>
+							<div class="help">
+								多元、都市和自然
+							</div>
+							
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="city-list">
+					<li>
+					<a href="10.html">
+						<div class="list-left">
+							<img src="img/user1.jpg" alt="">
+						</div>
+						<div class="list-right">
+							<div class="wda">
+								<span>穷游活动</span>
+								<div>
+									<span class="icon-pinglun"></span>2017
+								</div>
+							</div>
+							<div class="help">
+								线上及线下活动
+							</div>
+							
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="city-list">
+					<li>
+					<a href="10.html">
+						<div class="list-left">
+							<img src="img/user3.jpg" alt="">
+						</div>
+						<div class="list-right">
+							<div class="wda">
+								<span>泰国</span>
+								<div>
+									<span class="icon-pinglun"></span>46805
+								</div>
+							</div>
+							<div class="help">
+								冬阴功汤、四面佛和国王
+							</div>
+							
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="city-list">
+					<li>
+					<a href="10.html">
+						<div class="list-left">
+							<img src="img/user8.jpg" alt="">
+						</div>
+						<div class="list-right">
+							<div class="wda">
+								<span>旅行摄影</span>
+								<div>
+									<span class="icon-pinglun"></span>7689
+								</div>
+							</div>
+							<div class="help">
+								行色
+							</div>
+							
+						</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	</div>
+</body>
+</html>
+<script>
+var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true
+    });
+var myScroll = new IScroll('#wrapper', {
+		// scrollbars:'custom',
+		scrollbars: true,
+		mouseWheel: true,
+		interactiveScrollbars: true,
+		shrinkScrollbars: 'scale',
+		fadeScrollbars: true
+	});
+</script>

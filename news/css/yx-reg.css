@@ -1,0 +1,201 @@
+@import url(base.css);
+/*头部开始*/
+header{
+	width: 100%;
+	height: .51rem;
+	background: #f75b5c;
+	border-bottom: .01rem solid #fdd6d7;
+	display: flex;
+	justify-content: space-between;
+}
+.back{
+	display: block;
+	width: .64rem;
+	height: .5rem;
+	padding-left: .13rem;
+	display: flex;
+}
+.icon-jiantou2{
+	/*display: block;*/
+	/*width: .9rem;
+	height: .15rem;*/
+	line-height: .5rem;
+	font-family: 'iconfont';
+	font-size: .16rem;
+	color: #fdedee;
+}
+.fan{
+	display: block;
+	width: .4rem;
+	height: .5rem;
+	padding-left: .08rem;
+	text-align: left;
+	line-height: .5rem;
+	font-size: .12rem;
+	color: #fff5f6;
+}
+.reg{
+    width: .36rem;
+    height: .5rem;
+    color: #fff4f1;
+    font-size: .16rem;
+    line-height: .5rem;
+}
+.next{
+	display: block;
+	width: .51rem;
+	height: .5rem;
+	font-size: .12rem;
+	color: #f8f2e4;
+	line-height: .5rem;
+}
+/*头部结束*/
+/*邮箱注册开始*/
+.yxreg{
+	width: 100%;
+	height: .32rem;
+	padding-left: .3rem;
+	padding-right: .3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.yx-reg{
+	display: block;
+	width: .6rem;
+	height: 100%;
+	font-size: .14rem;
+	color: #e1e1e1;
+	line-height: .32rem;
+}
+.yx-reg2{
+	width: .8rem;
+}
+.phone-reg{
+	display: block;
+	width: .8rem;
+	height: .32rem;
+	font-size: .14rem;
+	line-height: .32rem;
+	text-align: center;
+	color: #f96565;
+	border-bottom: .01rem solid #f96565;
+}
+.kongbai{
+	width: 100%;
+	height: .23rem;
+	background: #f1f0f5;
+	border-bottom: .01rem solid #e8e9eb;
+}
+/*邮箱注册结束*/
+/*信息开始*/
+.xinxi{
+	width: 100%;
+	height: 1.9rem;
+	background: #fff;
+}
+.xinxi-box{
+	width: 100%;
+	height: 100%;
+	padding-left: .11rem;
+}
+.xinxi-box li{
+	width: 100%;
+	height: .48rem;
+	border-bottom: .01rem solid #ecedef;
+	display: flex;
+	/*justify-content: space-between;*/
+}
+.xinxi-font{
+	width: .3rem;
+	height: 100%;
+	line-height: .48rem;
+	text-align: right;
+	font-size: .14rem;
+	color: #3b3b3b;
+}
+.xinxi-tianxie{
+	width: 2.81rem;
+	height: 100%;
+	padding-left: .13rem;
+	display: flex;
+}
+.xinxi-tianxie input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: .12rem;
+	color: #c7c7c7;
+	line-height: .48rem;
+}
+.xinxi-tianxie input:focus{
+	outline: none;
+}
+.xinxi-box li:nth-child(2){
+	border-bottom: .02rem solid #fdfdfd;
+}
+.xinxi-box li:nth-child(3),.xinxi-box li:nth-child(4){
+	border-bottom: 0 solid #fdfdfd;
+}
+.xinxi-mm{
+	width: .6rem;
+}
+.xinxi-tianxie1{
+	width: 2.5rem;
+}
+.close{
+	width: .27rem;
+	height: .48rem;
+}
+.icon-shanchu2{
+	font-family: 'iconfont';
+	width: .14rem;
+	height: .15rem;
+	display: block;
+    font-size: .14rem;
+    line-height: .48rem;
+    color: #bebebe;
+}
+/*信息结束*/
+/*底部开始*/
+footer{
+	width: 100%;
+	height: 3.13rem;
+	background: #f2f1f6;
+	padding-top: .12rem;
+}
+.save{
+     width:100%;
+     height: .12rem;
+     display: flex;
+     justify-content: space-between;
+}
+.save-box{
+	width: .9rem;
+	height: 100%;
+	/*padding-top: .11rem;*/
+	padding-left: .13rem;
+	font-size: .12rem;
+	line-height: .12rem;
+	color: #8a898e;
+	display: flex;
+}
+
+.xieyi{
+	display: block;
+	width: 1.8rem;
+	height: 100%;
+	font-size: .12rem;
+	color: #7f7f81;
+	/*padding-top: .12rem;*/
+	display: flex;
+}
+.xieyi a{
+	/*display: block;*/
+	color: #fc5b61;
+	/*border-bottom: .01rem solid #f9a1ad;*/
+}
+u{
+	text-decoration: underline;
+	color: #fc5b61;
+}
+/*底部结束*/

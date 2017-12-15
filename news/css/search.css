@@ -1,0 +1,110 @@
+@import url(base.css);
+.search{
+	width: 100%;
+	height: 6.01rem;
+	background: #fff;
+}
+.search-box{
+	width: 100%;
+	height: auto; 
+}
+.search-box li{
+	width: 100%;
+	height: .51rem;
+	/*background: #ccc;*/
+	border-bottom: .01rem solid #f1f1f1;
+	display: flex;
+}
+.sousuo-pic{
+	width: .31rem;
+	height: 100%;
+	padding-top: .18rem;
+	padding-left: .15rem;
+}
+.icon-sousuo2{
+	display: block;
+	width: .16rem;
+	height: .16rem;
+	font-family: 'iconfont';
+	font-size: .16rem;
+	color: #a7a7a7;
+}
+.sousuo-box{
+	display: block;
+	width: 2.78rem;
+	height: .5rem;
+	display: flex;
+	padding-left: .04rem;
+}
+.shuxian{
+	width: .02rem;
+	height: .14rem;
+	margin-top: .19rem;
+	background: #6096e0;
+}
+.sousuo-box input{
+	width: 2.72rem;
+	height: 100%;
+	border:none;
+	padding-left: .03rem;
+	font-size: .14rem;
+	line-height: .5rem;
+	color: #666666;
+}
+/*当获取焦点，外边线消失*/
+.sousuo-box input:focus{
+	outline: none;
+}
+.cancel{
+	width: 3.5rem;
+	height: 100%;
+}
+.cancel-box{
+	display: block;
+	font-size: .14rem;
+	color: #d15d6a;
+	border: none;
+	background: #fff;
+	line-height: .5rem;
+}
+.cancel input:focus{
+	outline: none;
+}
+.icon-shijian{
+	display: block;
+	width: .16rem;
+	height: .16rem;
+	font-family: 'iconfont';
+	font-size: .16rem;
+	color: #a7a7a7;
+}
+.sousuo-box a{
+     display: block;
+     font-size: .14rem;
+	 line-height: .5rem;
+	 padding-left: .05rem;
+	 color: #666666;
+}
+.delete{
+	display: block;
+	/*width: .98rem;*/
+	height: .49rem;
+	margin:0 auto;
+	display: flex;
+}
+.icon-shanchu{
+	width: .16rem;
+	height: .16rem;
+	font-size: .16rem;
+	font-family: 'iconfont';
+	color: #a7a7a7;
+	line-height: .5rem;
+}
+.delete-box{
+	/*width: .83rem;*/
+	height: .5rem;
+	font-size: .12rem;
+	line-height: .5rem;
+	padding-left: .06rem;
+	color: #666666;
+}
