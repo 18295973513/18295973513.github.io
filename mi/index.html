@@ -1,0 +1,4378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="iconfont/iconfont.css">
+        <title>小米</title>   
+         <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+         <script src="js/animate.js"></script>
+          <script src="js/js.js"></script>
+          <!-- <script src="js/jquery.lazyload.min.js"></script> -->
+        <style>
+          .dapei-zi21 .active,.dapei-zi3 .active,.dapei-zi2 .active{
+            color: #ff6700;
+            border-bottom: 1px solid #ff6700;
+            transition: border-bottom 1s,color .3s;
+          }
+          .bianhuan,.bianhuan2,.bianhuan3{
+            width: 978px;
+            height: 614px;
+            transition: all 1s;
+          }
+          .bianhuan li,.bianhuan2 li,.bianhuan3 li{
+            width: 978px;
+            height: 614px;
+            float: left;
+            display: none;
+            /*opacity: 0;*/
+            /*transition: opacity 1s;*/
+          }
+          .bianhuan .active,.bianhuan2 .active,.bianhuan3 .active{
+            display: block;
+            /*opacity: 1;*/
+          }
+          .zhanshi{
+            position: relative;
+            overflow: hidden;
+          }
+          .banner-tu{
+            width: 100%;
+            height: 100%;
+            position:relative;
+          }
+          .banner-tu li{
+            width: 100%;
+            height: 100%;
+            /*float: left;*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            /*transition: opacity 1s;*/
+          }
+          .banner-tu .active{
+            opacity: 1;
+            /*left: 0;*/   
+          }
+           .banner-tu zindex {
+            z-index: 2;   
+          }
+          .square .active{
+            cursor: pointer;
+            background: #8D5951;
+          }
+          .yuandian .active,.yuandian-1 .active,.yuandian-2 .active,.yuandian-3 .active{
+            width: 4px;
+            height: 4px;
+            background: white;
+            border: 2px solid #ff7b22;
+          }
+          
+        </style>
+    </head>
+    <body>
+    <!-- 头部开始 -->
+    <header>
+    	<main>
+    		<ul class="head-left">
+    			<li class="first"><a href="">小米商城</a></li>
+    			<li><a href="">MIUI</a></li>
+    			<li><a href="">米聊</a></li>
+    			<li><a href="">游戏</a></li>
+    			<li><a href="">多看阅读</a></li>
+    			<li><a href="">云服务</a></li>
+    			<li><a href="">金融</a></li>
+    			<li><a href="">小米商城移动版</a></li>
+    			<li><a href="">问题反馈</a></li>
+    			<li class="last"><a href="">Select Region</a></li>
+    		</ul>
+    		<div class="head-right">
+    			<ul class="head-right">
+    				<li class="zuo"><a href="">登录</a></li>
+    				<li><a href="">注册</a></li>
+    				<li class="you"><a href="">消息通知</a></li>
+    			</ul>
+    			<a href="" id="gouwuche">
+    				<span class="icon-gouwuchekong"></span>
+    				<span class="gwc0">购物车(0)</span>
+            <div class="cart-menu">
+              <div class="loading">购物车中还没有商品，赶紧选购吧！</div>
+            </div>
+    			</a>
+    		</div>
+    	</main>
+    </header>
+    <!-- 头部结束 -->
+    <!-- 导航开始 -->
+    <div class="nav">
+    	<main class="shang">
+    		<a href="" class="logo"></a>
+    		<nav class="top">
+    			<ul class="zhu">
+    				<li class="shouji-hezibox"><a href="">小米手机</a>
+              
+            </li>
+    				<li class="shouji-hezibox"><a href="">红米</a>
+                
+            </li>
+    				<li class="shouji-hezibox"><a href="">平板·笔记本</a>
+                 
+            </li>
+    				<li class="shouji-hezibox"><a href="">电视</a>
+                 
+            </li>
+    				<li class="shouji-hezibox"><a href="">盒子·影音</a>
+              
+            </li>
+    				<li class="shouji-hezibox"><a href="">路由器</a>
+                 
+            </li>
+    				<li class="shouji-hezibox"><a href="">智能硬件</a>
+                 
+
+            </li>
+    				<li class="shouji-hezibox1"><a href="">服务</a></li>
+    				<li class="shouji-hezibox2 hou"><a href="">社区</a></li>
+    			</ul>
+          <div class="container">
+                <ul class="children-list active">
+                  <li >
+                    <div class="flgure-thumb" id="first">
+                      <a href="">
+                        <img src="img/phone.png" alt="">
+                      </a>
+                    </div>
+                    <div class="title">
+                      <a href="">小米6</a>
+                    </div>
+                    <p class="price">2499元起</p>
+                  </li>
+                  <li>
+                    <div class="flgure-thumb">
+                      <a href="">
+                        <img src="img/phone.png" alt="">
+                      </a>
+                    </div>
+                    <div class="title">
+                      <a href="">小米6</a>
+                    </div>
+                    <p class="price">2499元起</p>
+                    <div class="flags">
+                      <div class="flag">现货</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flgure-thumb">
+                      <a href="">
+                        <img src="img/phone.png" alt="">
+                      </a>
+                    </div>
+                    <div class="title">
+                      <a href="">小米6</a>
+                    </div>
+                    <p class="price">2499元起</p>
+                    <div class="flags">
+                      <div class="flag">新品</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flgure-thumb">
+                      <a href="">
+                        <img src="img/phone.png" alt="">
+                      </a>
+                    </div>
+                    <div class="title">
+                      <a href="">小米6</a>
+                    </div>
+                    <p class="price">2499元起</p>
+                    <div class="flags">
+                      <div class="flag">下单立减500</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flgure-thumb">
+                      <a href="">
+                        <img src="img/phone.png" alt="">
+                      </a>
+                    </div>
+                    <div class="title">
+                      <a href="">小米6</a>
+                    </div>
+                    <p class="price">2499元起</p>
+                    <div class="flags">
+                      <div class="flag">下单立减500</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flgure-thumb">
+                      <a href="">
+                        <img src="img/phone.png" alt="">
+                      </a>
+                    </div>
+                    <div class="title">
+                      <a href="">小米6</a>
+                    </div>
+                    <p class="price">2499元起</p>
+                    <div class="flags">
+                      <div class="flag">下单立减500</div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="children-list">
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">现货</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png"  alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">现货</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png"  alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                </ul>
+                <ul class="children-list">
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="children-list">
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                </ul>
+                <ul class="children-list">
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      
+                    </li>
+                </ul>
+                <ul class="children-list">
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    </li>
+                </ul>
+                <ul class="children-list">
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      <div class="flags">
+                        <div class="flag">新品</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      
+                    </li>
+                    <li >
+                      <div class="flgure-thumb" id="first">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                     
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                      
+                    </li>
+                    <li>
+                      <div class="flgure-thumb">
+                        <a href="">
+                          <img src="img/phone.png" data-src="img/phone.png" alt="">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="">小米6</a>
+                      </div>
+                      <p class="price">2499元起</p>
+                    
+                    </li>
+                </ul>
+          </div>
+    		</nav>
+    		<div class="sou">
+    		   <input type="text" class="shuru">
+    		   <div class="soubox">
+    		   <a href="" class="MIX">小米MIX</a>
+    		   <a href="" class="tv">人工智能电视</a>
+               </div>
+    		   <input type="button" class="sousuo">
+    		   </div>
+    	</main>
+    </div>
+    <!-- 导航结束 -->
+    <!-- 展示图开始 -->
+    <div class="zhanshi">   
+    	<aside class="cebian">
+    		<ul>
+          <li><div class="bbox">
+            <div class="bbox-righthezi">
+              <div class="category-item">
+                <ul class="category-item-box">
+                  <li>
+                    <a href="" class="link">
+                      <img class="thumb" src="img/ce1.png" alt="" >
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a> 
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img class="thumb"  src="img/cb-2.png"  alt="" >
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img class="thumb" src="img/cb-3.jpg"  alt="" >
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/cb-4.png" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/cb-5.jpg" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/cb-6.jpg" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                </ul>
+                <ul class="category-item-box">
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/cb-7.png" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/cb-2.png" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/cb-5.jpg" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/cb-6.jpg" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/section2-2.png" data-src="img/img/section2-2.png" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img src="img/section2-2.png" data-src="img/img/section2-2.png" alt="" class="thumb">
+                      <span class="shouji-text">小米</span>
+                    </a>
+                    <a href="" class="btn-line">选购</a>  
+                  </li>
+                </ul>
+                <ul class="category-item-box">
+                  <li>
+                    <a href="" class="link">
+                      <img class="thumb" src="img/section2-2.png" data-src="img/img/section2-2.png" alt="" >
+                      <span class="shouji-text">小米</span>
+                    </a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img class="thumb" src="img/section2-2.png" data-src="img/img/section2-2.png" alt="" >
+                      <span class="shouji-text">小米</span>
+                    </a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img class="thumb" src="img/section2-2.png" data-src="img/img/section2-2.png" alt="" >
+                      <span class="shouji-text">小米</span>
+                    </a>  
+                  </li>
+                  <li>
+                    <a href="" class="link">
+                      <img class="thumb" src="img/section2-2.png" data-src="img/img/section2-2.png" alt="" >
+                      <span class="shouji-text">小米</span>
+                    </a>  
+                  </li>
+                </ul>
+              </div>
+            </div>
+              <ul>
+                <a href="" class="youjian">
+                </a>
+                <li class="cedaohang"><a href="" class="youbian-color">手机 电话卡</a></li>
+              </ul>
+          </div></li>
+          <li class="cedaohang">
+            <div class="bbox boxx">
+              <div class="bbox-righthezi">
+                <div class="category-item">
+                  <ul class="category-item-box">
+                    <li>
+                      <a href="" class="link">
+                        <img class="thumb" src="img/cb-2.png"  alt="" >
+                        <span class="shouji-text">小米</span>
+                      </a>
+                      <a href="" class="btn-line">选购</a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img class="thumb"  src="img/cb-3.jpg" alt="" >
+                        <span class="shouji-text">小米</span>
+                      </a>
+                      <a href="" class="btn-line">选购</a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img class="thumb" src="img/cb-4.png"  alt="" >
+                        <span class="shouji-text">小米</span>
+                      </a>
+                      <a href="" class="btn-line">选购</a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img src="img/cb-5.jpg" alt="" class="thumb">
+                        <span class="shouji-text">小米</span>
+                      </a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img src="img/cb-6.jpg" alt="" class="thumb">
+                        <span class="shouji-text">小米</span>
+                      </a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img src="img/cb-7.png" alt="" class="thumb">
+                        <span class="shouji-text">小米</span>
+                      </a>  
+                    </li>
+                  </ul>
+                  <ul class="category-item-box">
+                    <li>
+                      <a href="" class="link">
+                        <img class="thumb" src="img/ce1.png" alt="" >
+                        <span class="shouji-text">小米</span>
+                      </a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img class="thumb" src="img/cb-2.png" alt="" >
+                        <span class="shouji-text">小米</span>
+                      </a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img class="thumb" src="img/cb-3.jpg" alt="" >
+                        <span class="shouji-text">小米</span>
+                      </a>  
+                    </li>
+                    <li>
+                      <a href="" class="link">
+                        <img class="thumb" src="img/cb-5.jpg" alt="" >
+                        <span class="shouji-text">小米</span>
+                      </a>  
+                    </li>
+                  </ul>
+                </div>
+              </div>      
+                <ul>
+                  <a href="" class="youjian"></a>
+                  <li class="cedaohang"><a href="" class="youbian-color">笔记本 平板</a></li>
+                </ul>
+            </div>
+          </li>
+          <li>
+            <div class="bbox boxx">
+              <div class="bbox-righthezi">
+                <div class="category-item">
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/cb-5.jpg" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/cb-6.jpg" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/cb-9.jpg" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/cb-5.jpg"  alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/cb-7.png"  alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/cb-3.jpg" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png"  alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/cb-5.jpg"  alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/ce1.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" data-src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" data-src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" data-src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/cb-6.jpg" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/cb-3.jpg" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/cb-6.jpg" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/cb-4.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                </div>
+              </div>
+              <ul>
+                <a href="" class="youjian"></a>
+                <li class="cedaohang"><a href="" class="youbian-color">电视 盒子</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="cedaohang">
+            <div class="bbox boxx">
+              <div class="bbox-righthezi">
+                <div class="category-item">
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                </div>
+              </div>
+              <ul>
+              <a href="" class="youjian"></a>
+                <li class="cedaohang"><a href="" class="youbian-color">路由器 智能硬件</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><div class="bbox boxx">
+              <div class="bbox-righthezi">
+                <div class="category-item">
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+              <ul>
+              <a href="" class="youjian"></a>
+                <li class="cedaohang"><a href="" class="youbian-color">移动电源 电池 插线板</a></li>
+              </ul>
+          </div></li>
+          <li class="cedaohang">
+            <div class="bbox boxx">
+              <div class="bbox-righthezi">
+                <div class="category-item">
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                </div>
+            </div>
+              <ul>
+                <a href="" class="youjian"></a>
+                <li class="cedaohang"><a href="" class="youbian-color">耳机 音箱</a></li>
+              </ul>
+          </div></li>
+          <li class="cedaohang">
+            <div class="bbox boxx">
+              <div class="bbox-righthezi">
+                <div class="category-item">
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                </div>
+              </div>
+              <ul>
+                <a href="" class="youjian"></a>
+                <li class="cedaohang"><a href="" class="youbian-color">保护套 贴膜</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="cedaohang">
+            <div class="bbox boxx">
+              <div class="bbox-righthezi">
+                <div class="category-item">
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                </div>
+              </div>
+              <ul>
+                <a href="" class="youjian"></a>
+                <li class="cedaohang"><a href="" class="youbian-color">线材 支架 存储卡</a></li>
+              </ul>
+           </div></li>
+           <li class="cedaohang">
+              <div class="bbox boxx">
+                <div class="bbox-righthezi">
+                    <div class="category-item">
+                      <ul class="category-item-box">
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb"  src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img class="thumb" src="img/section2-2.png" alt="" >
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a href="" class="link">
+                            <img src="img/section2-2.png" alt="" class="thumb">
+                            <span class="shouji-text">小米</span>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+                <ul>
+                  <a href="" class="youjian"></a>
+                  <li class="cedaohang"><a href="" class="youbian-color">箱包 服饰</a></li>
+                </ul>
+          </div></li>
+          <li class="cedaohang">
+              <div class="bbox boxx">
+                <div class="bbox-righthezi">
+                  <div class="category-item">
+                    <ul class="category-item-box">
+                      <li>
+                        <a href="" class="link">
+                          <img class="thumb" src="img/section2-2.png" alt="" >
+                          <span class="shouji-text">小米</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="link">
+                          <img class="thumb"  src="img/section2-2.png" alt="" >
+                          <span class="shouji-text">小米</span>
+                        </a>  
+                      </li>
+                      <li>
+                        <a href="" class="link">
+                          <img class="thumb" src="img/section2-2.png" alt="" >
+                          <span class="shouji-text">小米</span>
+                        </a>  
+                      </li>
+                      <li>
+                        <a href="" class="link">
+                          <img src="img/section2-2.png" alt="" class="thumb">
+                          <span class="shouji-text">小米</span>
+                        </a>  
+                      </li>
+                      <li>
+                        <a href="" class="link">
+                          <img src="img/section2-2.png" alt="" class="thumb">
+                          <span class="shouji-text">小米</span>
+                        </a>  
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              <ul>
+                <a href="" class="youjian"></a>
+                <li class="cedaohang"><a href="" class="youbian-color">米兔 周边生活</a></li>
+              </ul>
+          </div></li>
+        </ul>
+    	</aside>
+      <div class="square">
+        <div class="circle active"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>    
+      <div class="syz">
+        <div class="icon-arrow-left"></div>
+      </div>
+      <div class="xyz">
+        <div class="icon-jiantou-copy"></div>
+      </div>
+      <ul class="banner-tu">
+        <li class="active">
+          <a href="">
+            <img src="img/banner1.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/banner2.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/banner3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/banner4.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/banner5.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/banner6.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/banner7.jpg" alt="">
+          </a>
+        </li>
+      </ul>  
+    </div>
+    <!-- 展示图结束 -->
+    <!-- 广告开始 -->
+     <div class="guanggao">
+     	<div class="yi">
+     		<a href="" class="yiyi">
+         <div class="yi-box">
+            <div class="icon-shouji"></div>
+            选购手机 
+          </div>
+        </a>
+        <a href="" class="yiyi">
+         <div class="yi-box">
+            <div class="icon-lihe"></div>
+            企业团购 
+          </div>
+        </a>
+        
+        <a href="" class="yiyi">
+         <div class="yi-box">
+            <div class="icon-shuaxin"></div>
+            官翻产品 
+          </div>
+        </a>
+        <a href="" class="yiyi">
+         <div class="yi-box">
+            <div class="icon-shoujiqia"></div>
+            米粉卡 
+          </div>
+        </a>
+        <a href="" class="yiyi">
+         <div class="yi-box">
+            <div class="icon-yijiuhuanxin1"></div>
+            以旧换新 
+          </div>
+        </a>
+     		<a href="" class="yiyi">
+         <div class="yi-box">
+            <div class="icon-lihe"></div>
+            话费充值 
+          </div>
+        </a>
+     	</div>
+     	<a href="" class="er">
+     	    <img src="img/2.jpg" alt="" class="er">
+     	</a>
+     	<a href="" class="san">
+     	    <img src="img/3.jpg" alt="" class="san">
+     	</a>
+     	<a href="" class="si">
+     	    <img src="img/4.jpg" alt="" class="si">
+     	</a>
+     </div>
+    <!-- 广告结束 -->
+    <!-- 明星产品 -->
+    <div class="main">
+        <div class="section">
+    		<span class="zt3">小米明星单品</span>
+    		<div class="hezi">
+    		    <div class="hz-left">
+              <b>&lt;</b>
+            </div>
+    		    <div class="hz-right">
+              <b>&gt;</b>
+            </div>	    	
+    		</div>
+    	</div>
+      <div class="sp-star">
+              <ul class="sp">
+                <li>
+                    <a href="" class="tp1">
+                        <img src="img/1 (2).png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米笔记本</a>
+                      <span class="xb2">更轻更薄，像杂志一样随身携带</span>
+                      <span class="xb3">3499元起</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp2">
+                        <img src="img/2.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米电视3s 48英寸</a>
+                      <span class="xb2">原装液晶屏，金属机身</span>
+                      <span class="xb3">2599元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp3">
+                        <img src="img/3.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米移动电源2</a>
+                      <span class="xb2">双向快冲，高密度锂聚合物电芯</span>
+                      <span class="xb3">79元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp4">
+                        <img src="img/4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米手环 2</a>
+                      <span class="xb2">OLED 显示屏幕，升级计步算法</span>
+                      <span class="xb3">149元</span>
+                    </div> 
+                </li>
+                <li class="llast">
+                    <a href="" class="tp5">
+                       <img src="img/5.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">米家扫地机器人</a>
+                      <span class="xb2">智能路径规划，扫得干净扫得快</span>
+                      <span class="xb3">1699元</span>
+                    </div> 
+                </li>
+                <li>
+                    <a href="" class="tp1">
+                        <img src="img/3.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米笔记本</a>
+                      <span class="xb2">更轻更薄，像杂志一样随身携带</span>
+                      <span class="xb3">3499元起</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp2">
+                        <img src="img/1 (2).png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米电视3s 48英寸</a>
+                      <span class="xb2">原装液晶屏，金属机身</span>
+                      <span class="xb3">2599元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp3">
+                        <img src="img/2.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米移动电源2</a>
+                      <span class="xb2">双向快冲，高密度锂聚合物电芯</span>
+                      <span class="xb3">79元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp4">
+                        <img src="img/4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米手环 2</a>
+                      <span class="xb2">OLED 显示屏幕，升级计步算法</span>
+                      <span class="xb3">149元</span>
+                    </div> 
+                </li>
+                <li class="llast">
+                    <a href="" class="tp5">
+                       <img src="img/5.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">米家扫地机器人</a>
+                      <span class="xb2">智能路径规划，扫得干净扫得快</span>
+                      <span class="xb3">1699元</span>
+                    </div> 
+                </li>
+              </ul>
+      </div>
+    </div>
+    <!-- 智能硬件开始 -->
+    <section class="znyj">
+          <section class="znyj-top">
+            <div class="znyj-zi1">智能硬件</div>
+            <section class="znyj-zi2">
+              <div class="znyj-zi11">查看全部</div>
+              <a href="" class="gengduo"></a>
+            </section>
+          </section> 
+          <section class="znyj-bottom">
+            <div class="znyj-1 yinying-2">
+              <img src="img/191.png" alt="">
+            </div>
+            <div class="znyj-2">
+              <div class="yingjianpl yinying">  
+                <a href="" class="yingjiantupian">
+                  <img src="img/111.png" alt="">
+                </a>
+                <div class="yincang">
+                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                </div>
+                <div class="xbb">
+                      <a href="" class="xb11">米家小白智能摄像机</a>
+                      <span class="xb22">360°全景拍摄，1080p高清摄影</span>
+                      <span class="xb33">399元</span>
+                 </div>
+              </div>
+             
+             <div class="yingjianpl yinying"> 
+                <a href="" class="yingjiantupian">
+                  <img src="img/112.png" alt="">
+                </a>
+                 <div class="
+                 yincang">
+                   <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                 </div>
+                 <div class="xbb">
+                      <a href="" class="xb11">米兔儿童手表Q</a>
+                      <span class="xb22">11重安全设计，5重精准定位</span>
+                      <span class="xb33">299元</span>
+                 </div>
+              </div>
+              <div class="yingjianpl yinying">
+                <a href="" class="yingjiantupian">
+                  <img src="img/113.png" alt="">
+                </a>
+                <div class="yincang">
+                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                </div>
+                <div class="xbb">
+                      <a href="" class="xb11">米兔智能故事机</a>
+                      <span class="xb22">微信远程互动，智能语音交互</span>
+                      <span class="xb33">199元</span>
+                 </div>
+              </div>
+              <div class="yingjianpl yinying" id="znyj-ts1">
+                <a href=""  class="yingjiantupian">
+                  <img src="img/114.png" alt="">
+                </a>
+                <div class="yincang">
+                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                </div>
+                <div class="xbb">
+                      <a href="" class="xb11">米家压力IH电饭煲</a>
+                      <span class="xb22">智能烹饪，灰铸铁粉体涂层内胆</span>
+                      <span class="xb33">999元</span>
+                 </div>
+              </div>
+                <div class="yingjianpl yinying" id="znyj-ts">
+                <a href="" class="yingjiantupian">
+                  <img src="img/115.png" alt="">
+                </a>
+                 <div class="yincang">
+                   <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                 </div>
+                 <div class="xbb">
+                      <a href="" class="xb11">小米米家电动滑板车</a>
+                      <span class="xb22">极简几何设计，1分钟轻松上手</span>
+                      <span class="xb33">1999元</span>
+                 </div>
+              </div>
+              <div class="yingjianpl yinying" id="znyj-ts">
+                <a href="" class="yingjiantupian">
+                  <img src="img/116.png" alt="">
+                </a>
+                <div class="yincang">
+                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                </div>
+                <div class="xbb">
+                      <a href="" class="xb11">米兔积木机器人</a>
+                      <span class="xb22">9778个零件，享受挑战双手的乐趣</span>
+                      <span class="xb33">499元</span>
+                 </div>
+              </div>
+              <div class="yingjianpl yinying" id="znyj-ts">
+                <a href="" class="yingjiantupian">
+                  <img src="img/117.png" alt="">
+                </a>
+                <div class="yincang">
+                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                </div>
+                <div class="xbb">
+                      <a href="" class="xb11">小米空气净化器2</a>
+                      <span class="xb22">高效除霾，10分钟换新房间空气</span>
+                      <span class="xb33">699元</span>
+                 </div>
+              </div>
+              <div class="yingjianpl yinying" id="znyj-ts2">
+                <a href="" class="yingjiantupian">
+                  <img src="img/118.png" alt="">
+                </a>
+                <div class="yincang">
+                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                  <p>来自于 HZG 的评价</p>
+                </div>
+                <div class="xbb">
+                      <a href="" class="xb11">米兔定位电话</a>
+                      <span class="xb22">高清双向通话，五重精准定位</span>
+                      <span class="xb33">169元</span>
+                 </div>
+              </div>
+            </div> 
+          </section>      
+    </section>
+    <!-- 智能硬件结束 -->
+    <!-- 搭配开始  -->       
+    <section class="dapei">
+          <section class="dapei-top">
+            <div class="dapei-zi1">搭配</div>
+            <ul class="dapei-zi21">
+              <li class="active">热门</li>
+              <li>耳机音箱</li>
+              <li>电源</li>
+              <li class="dapei-zi2-teshu">电池储存卡</li>
+            </ul>
+          </section> 
+          <section class="dapei-bottom">
+              <div class="dapei-bottom-left">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dpleft1.png" alt="">
+                      </a>
+                  </div>
+                 <div class="dapeipl yinying" id="dapei-ts" >
+                      <a href="" class="dapeitupian">
+                        <img  src="img/dpleft2.png" alt="">
+                      </a>
+                  </div> 
+              </div>
+              <ul class="bianhuan">
+                <li class="active">
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img  src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img  src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+              </ul>
+          </section>             
+    </section>
+    <!-- 搭配结束 -->
+    <!-- 配件开始 -->
+    <section class="dapei">
+          <section class="dapei-top">
+            <div class="dapei-zi1">配件</div>
+            <ul class="dapei-zi3 dapeiks-zi2">
+              <li class="active">热门</li>
+              <li>保护套</li>
+              <li>贴膜</li>
+              <li class="dapei-zi2-teshu">其它配件</li>
+            </ul>
+          </section> 
+          <section class="dapei-bottom">
+                        <div class="dapei-bottom-left">
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dpleft1.png" alt="">
+                                </a>
+                            </div>
+                           <div class="dapeipl yinying" id="dapei-ts" >
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dpleft2.png" alt="">
+                                </a>
+                            </div> 
+                        </div>
+                        <ul class="bianhuan2">
+                          <li class="active">
+                            <div class="dapei-bottom-right">
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei2.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">20000mAh小米移动电源2</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">3910人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei1.png" alt="" class="libian">
+                                </a>
+                                 <div class="yincang">
+                                   <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                 </div>
+                                  <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源5000mAh</a>
+                                      <span class="xb222">49元</span>
+                                      <span class="xb333">9.8万人评价</span>
+                                 </div>
+                            </div>
+                            
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei3.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米圈铁耳机Pro</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">6183人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts1" >
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei4.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">1320人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei5.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米活塞耳机</a>
+                                      <span class="xb222">29元</span>
+                                      <span class="xb333">1万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei6.jpg" alt="" class="libian" >
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                                      <span class="xb222">59元</span>
+                                      <span class="xb333">1.1万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei7.jpg" alt="" class="libian">
+                                </a> 
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                                      <span class="xb222">129元</span>
+                                      <span class="xb333">1.8万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl" id="dapei-ts2">
+                                <div >
+                                  <div class="dapei-right yinying yinying2" >
+                                    <div class="dapei-rightzi">
+                                      <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                                      <span class=" dapei-rightzi2">99元</span>
+                                    </div>
+                                    <a href="" class="dapei-righttu">
+                                      <img src="img/dapei8.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="dapei-right dapei-right2 yinying yinying2">
+                                    <div class="dapei-rightzii">
+                                      <a href="" class="dapei-rightzi11">浏览更多</a>
+                                      <a href="" class=" dapei-rightzi22">热门</a>
+                                    </div>
+                                    <a href="" class="dapei-righttuu">
+                                      <img src="img/dapei9.png" alt="">
+                                    </a>
+                                  </div>
+                                </div> 
+                            </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="dapei-bottom-right">
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei1.png" alt="" class="libian">
+                                </a>
+                                 <div class="yincang">
+                                   <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                 </div>
+                                  <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源5000mAh</a>
+                                      <span class="xb222">49元</span>
+                                      <span class="xb333">9.8万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei2.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">20000mAh小米移动电源2</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">3910人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei3.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米圈铁耳机Pro</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">6183人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts1" >
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei4.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">1320人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei5.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米活塞耳机</a>
+                                      <span class="xb222">29元</span>
+                                      <span class="xb333">1万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei7.jpg" alt="" class="libian">
+                                </a> 
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                                      <span class="xb222">129元</span>
+                                      <span class="xb333">1.8万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei6.jpg" alt="" class="libian" >
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                                      <span class="xb222">59元</span>
+                                      <span class="xb333">1.1万人评价</span>
+                                 </div>
+                            </div>
+                            
+                            <div class="dapeipl" id="dapei-ts2">
+                                <div >
+                                  <div class="dapei-right yinying yinying2" >
+                                    <div class="dapei-rightzi">
+                                      <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                                      <span class=" dapei-rightzi2">99元</span>
+                                    </div>
+                                    <a href="" class="dapei-righttu">
+                                      <img src="img/dapei8.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="dapei-right dapei-right2 yinying yinying2">
+                                    <div class="dapei-rightzii">
+                                      <a href="" class="dapei-rightzi11">浏览更多</a>
+                                      <a href="" class=" dapei-rightzi22">热门</a>
+                                    </div>
+                                    <a href="" class="dapei-righttuu">
+                                      <img src="img/dapei9.png" alt="">
+                                    </a>
+                                  </div>
+                                </div> 
+                            </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="dapei-bottom-right">
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei1.png" alt="" class="libian">
+                                </a>
+                                 <div class="yincang">
+                                   <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                 </div>
+                                  <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源5000mAh</a>
+                                      <span class="xb222">49元</span>
+                                      <span class="xb333">9.8万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei2.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">20000mAh小米移动电源2</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">3910人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei3.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米圈铁耳机Pro</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">6183人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts1" >
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei4.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">1320人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei5.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米活塞耳机</a>
+                                      <span class="xb222">29元</span>
+                                      <span class="xb333">1万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei6.jpg" alt="" class="libian" >
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                                      <span class="xb222">59元</span>
+                                      <span class="xb333">1.1万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei7.jpg" alt="" class="libian">
+                                </a> 
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                                      <span class="xb222">129元</span>
+                                      <span class="xb333">1.8万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl" id="dapei-ts2">
+                                <div >
+                                  <div class="dapei-right yinying yinying2" >
+                                    <div class="dapei-rightzi">
+                                      <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                                      <span class=" dapei-rightzi2">99元</span>
+                                    </div>
+                                    <a href="" class="dapei-righttu">
+                                      <img src="img/dapei8.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="dapei-right dapei-right2 yinying yinying2">
+                                    <div class="dapei-rightzii">
+                                      <a href="" class="dapei-rightzi11">浏览更多</a>
+                                      <a href="" class=" dapei-rightzi22">热门</a>
+                                    </div>
+                                    <a href="" class="dapei-righttuu">
+                                      <img src="img/dapei9.png" alt="">
+                                    </a>
+                                  </div>
+                                </div> 
+                            </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="dapei-bottom-right">
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei3.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米圈铁耳机Pro</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">6183人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei1.png" alt="" class="libian">
+                                </a>
+                                 <div class="yincang">
+                                   <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                 </div>
+                                  <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源5000mAh</a>
+                                      <span class="xb222">49元</span>
+                                      <span class="xb333">9.8万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei2.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">20000mAh小米移动电源2</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">3910人评价</span>
+                                 </div>
+                            </div>
+                            
+                            <div class="dapeipl yinying" id="dapei-ts1" >
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dapei4.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                                      <span class="xb222">149元</span>
+                                      <span class="xb333">1320人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei5.jpg" alt="" class="libian">
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米活塞耳机</a>
+                                      <span class="xb222">29元</span>
+                                      <span class="xb333">1万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei6.jpg" alt="" class="libian" >
+                                </a>
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                                      <span class="xb222">59元</span>
+                                      <span class="xb333">1.1万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl yinying" id="dapei-ts">
+                                <a href=""  class="dapeitupian">
+                                  <img src="img/dapei7.jpg" alt="" class="libian">
+                                </a> 
+                                <div class="yincang">
+                                  <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                                  <p>来自于 HZG 的评价</p>
+                                </div>
+                                <div class="xbbb">
+                                      <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                                      <span class="xb222">129元</span>
+                                      <span class="xb333">1.8万人评价</span>
+                                 </div>
+                            </div>
+                            <div class="dapeipl" id="dapei-ts2">
+                                <div >
+                                  <div class="dapei-right yinying yinying2" >
+                                    <div class="dapei-rightzi">
+                                      <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                                      <span class=" dapei-rightzi2">99元</span>
+                                    </div>
+                                    <a href="" class="dapei-righttu">
+                                      <img src="img/dapei8.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="dapei-right dapei-right2 yinying yinying2">
+                                    <div class="dapei-rightzii">
+                                      <a href="" class="dapei-rightzi11">浏览更多</a>
+                                      <a href="" class=" dapei-rightzi22">热门</a>
+                                    </div>
+                                    <a href="" class="dapei-righttuu">
+                                      <img src="img/dapei9.png" alt="">
+                                    </a>
+                                  </div>
+                                </div> 
+                            </div>
+                            </div>
+                          </li>
+                        </ul>
+          </section>       
+    </section>
+    <!-- 配件结束 -->
+    <!-- 周边开始 -->
+    <section class="dapei">
+          <section class="dapei-top">
+            <div class="dapei-zi1">搭配</div>
+            <ul class="dapei-zi2 dapeizb-zi2">
+              <li class="active">热门</li>
+              <li>服装</li>
+              <li>米兔</li>
+              <li>生活周边</li>
+              <li class="dapei-zi2-teshu">箱包</li>
+            </ul>
+          </section> 
+          <section class="dapei-bottom">
+            <div class="dapei-bottom-left">
+                            <div class="dapeipl yinying">
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dpleft1.png" alt="">
+                                </a>
+                            </div>
+                           <div class="dapeipl yinying" id="dapei-ts" >
+                                <a href="" class="dapeitupian">
+                                  <img src="img/dpleft2.png" alt="">
+                                </a>
+                            </div> 
+            </div>
+            <ul class="bianhuan3">
+                <li class="active">
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dapei-bottom-right">
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei1.png" alt="" class="libian">
+                      </a>
+                       <div class="yincang">
+                         <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                       </div>
+                        <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源5000mAh</a>
+                            <span class="xb222">49元</span>
+                            <span class="xb333">9.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei2.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">20000mAh小米移动电源2</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">3910人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying">
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei3.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米圈铁耳机Pro</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">6183人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts1" >
+                      <a href="" class="dapeitupian">
+                        <img src="img/dapei4.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米移动电源10000mAh高配版</a>
+                            <span class="xb222">149元</span>
+                            <span class="xb333">1320人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei5.jpg" alt="" class="libian">
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米活塞耳机</a>
+                            <span class="xb222">29元</span>
+                            <span class="xb333">1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei6.jpg" alt="" class="libian" >
+                      </a>
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米蓝牙耳机青春版</a>
+                            <span class="xb222">59元</span>
+                            <span class="xb333">1.1万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl yinying" id="dapei-ts">
+                      <a href=""  class="dapeitupian">
+                        <img src="img/dapei7.jpg" alt="" class="libian">
+                      </a> 
+                      <div class="yincang">
+                        <p>360°全景拍摄，1080p高清摄影,看看我们关于超长续航的疯狂想法</p>
+                        <p>来自于 HZG 的评价</p>
+                      </div>
+                      <div class="xbbb">
+                            <a href="" class="xb111">小米小钢炮蓝牙音箱2</a>
+                            <span class="xb222">129元</span>
+                            <span class="xb333">1.8万人评价</span>
+                       </div>
+                  </div>
+                  <div class="dapeipl" id="dapei-ts2">
+                      <div >
+                        <div class="dapei-right yinying yinying2" >
+                          <div class="dapei-rightzi">
+                            <a href="" class="dapei-rightzi1">小米圈铁耳机..</a>
+                            <span class=" dapei-rightzi2">99元</span>
+                          </div>
+                          <a href="" class="dapei-righttu">
+                            <img src="img/dapei8.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="dapei-right dapei-right2 yinying yinying2">
+                          <div class="dapei-rightzii">
+                            <a href="" class="dapei-rightzi11">浏览更多</a>
+                            <a href="" class=" dapei-rightzi22">热门</a>
+                          </div>
+                          <a href="" class="dapei-righttuu">
+                            <img src="img/dapei9.png" alt="">
+                          </a>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                </li>
+            </ul>
+          </section>      
+    </section>
+    <!-- 周边结束 -->
+    <!-- 为你推荐开始 -->
+    <div class="wntj">
+    <div class="main maintj">
+        <div class="section sectiontj">
+        <span class="zt3">为你推荐</span>
+        <div class="hezi">
+            <div class="hz-left1">
+              <div class="jt-left"></div></div>
+            <div class="hz-right1"> <div class="jt-right"></div> </div>
+             
+            
+        </div>
+      </div>
+      <div class="sp-star1">
+        <div class="mingxing-danpin">
+          <div class="sp-star-box active">
+              <ul class="sp">
+                <li>
+                    <a href="" class="tp1">
+                        <img src="img/3.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米笔记本</a>
+                      <span class="xb2">更轻更薄，像杂志一样随身携带</span>
+                      <span class="xb3">3499元起</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp2">
+                        <img src="img/1 (2).png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米电视3s 48英寸</a>
+                      <span class="xb2">原装液晶屏，金属机身</span>
+                      <span class="xb3">2599元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp3">
+                        <img src="img/2.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米移动电源2</a>
+                      <span class="xb2">双向快冲，高密度锂聚合物电芯</span>
+                      <span class="xb3">79元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp4">
+                        <img src="img/4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米手环 2</a>
+                      <span class="xb2">OLED 显示屏幕，升级计步算法</span>
+                      <span class="xb3">149元</span>
+                    </div> 
+                </li>
+                <li class="llast">
+                    <a href="" class="tp5">
+                       <img src="img/5.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">米家扫地机器人</a>
+                      <span class="xb2">智能路径规划，扫得干净扫得快</span>
+                      <span class="xb3">1699元</span>
+                    </div> 
+                </li>
+              </ul>
+          </div>
+          <div class="sp-star-box" >
+              <ul class="sp">
+                <li>
+                    <a href="" class="tp1">
+                        <img src="img/tj1.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米笔记本</a>
+                      <span class="xb2">更轻更薄，像杂志一样随身携带</span>
+                      <span class="xb3">3499元起</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp2">
+                        <img src="img/tj3.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米电视3s 48英寸</a>
+                      <span class="xb2">原装液晶屏，金属机身</span>
+                      <span class="xb3">2599元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp3">
+                        <img src="img/tj2.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米移动电源2</a>
+                      <span class="xb2">双向快冲，高密度锂聚合物电芯</span>
+                      <span class="xb3">79元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp4">
+                        <img src="img/4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米手环 2</a>
+                      <span class="xb2">OLED 显示屏幕，升级计步算法</span>
+                      <span class="xb3">149元</span>
+                    </div> 
+                </li>
+                <li class="llast">
+                    <a href="" class="tp5">
+                       <img src="img/tj4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">米家扫地机器人</a>
+                      <span class="xb2">智能路径规划，扫得干净扫得快</span>
+                      <span class="xb3">1699元</span>
+                    </div> 
+                </li>
+              </ul>
+          </div>
+          <div class="sp-star-box" >
+              <ul class="sp">
+                <li>
+                    <a href="" class="tp1">
+                        <img src="img/tj1.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米笔记本</a>
+                      <span class="xb2">更轻更薄，像杂志一样随身携带</span>
+                      <span class="xb3">3499元起</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp2">
+                        <img src="img/tj3.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米电视3s 48英寸</a>
+                      <span class="xb2">原装液晶屏，金属机身</span>
+                      <span class="xb3">2599元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp3">
+                        <img src="img/tj2.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米移动电源2</a>
+                      <span class="xb2">双向快冲，高密度锂聚合物电芯</span>
+                      <span class="xb3">79元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp4">
+                        <img src="img/4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米手环 2</a>
+                      <span class="xb2">OLED 显示屏幕，升级计步算法</span>
+                      <span class="xb3">149元</span>
+                    </div> 
+                </li>
+                <li class="llast">
+                    <a href="" class="tp5">
+                       <img src="img/tj4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">米家扫地机器人</a>
+                      <span class="xb2">智能路径规划，扫得干净扫得快</span>
+                      <span class="xb3">1699元</span>
+                    </div> 
+                </li>
+              </ul>
+          </div>
+          <div class="sp-star-box" >
+              <ul class="sp">
+                <li>
+                    <a href="" class="tp1">
+                        <img src="img/tj1.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米笔记本</a>
+                      <span class="xb2">更轻更薄，像杂志一样随身携带</span>
+                      <span class="xb3">3499元起</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp2">
+                        <img src="img/tj3.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米电视3s 48英寸</a>
+                      <span class="xb2">原装液晶屏，金属机身</span>
+                      <span class="xb3">2599元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp3">
+                        <img src="img/tj2.png" alt=""> 
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米移动电源2</a>
+                      <span class="xb2">双向快冲，高密度锂聚合物电芯</span>
+                      <span class="xb3">79元</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="tp4">
+                        <img src="img/4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">小米手环 2</a>
+                      <span class="xb2">OLED 显示屏幕，升级计步算法</span>
+                      <span class="xb3">149元</span>
+                    </div> 
+                </li>
+                <li class="llast">
+                    <a href="" class="tp5">
+                       <img src="img/tj4.png" alt="">
+                    </a>
+                    <div class="xb">
+                      <a href="" class="xb1">米家扫地机器人</a>
+                      <span class="xb2">智能路径规划，扫得干净扫得快</span>
+                      <span class="xb3">1699元</span>
+                    </div> 
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+     <!--  <ul class="sp">
+        <div class="tj1 yinying">
+            <a href="" class="noborder">
+                <img src="img/tj1.png" alt=""> 
+            </a>
+            <div class="xbb">
+              <a href="" class="xb11">小米笔记本</a>
+              <span class="xb22">更轻更薄，像杂志一样随身携带</span>
+              <span class="xb33">3499元起</span>
+            </div>
+        </div>
+        <div class="tj1 yinying">
+            <a href="" class="noborder">
+                <img src="img/tj2.png" alt=""> 
+            </a>
+            <div class="xbb">
+              <a href="" class="xb11">小米电视3s 48英寸</a>
+              <span class="xb22">原装液晶屏，金属机身</span>
+              <span class="xb33">2599元</span>
+            </div>
+        </div>
+        <div class="tj1 yinying">
+            <a href="" class="noborder">
+                <img src="img/tj3.png" alt=""> 
+            </a>
+            <div class="xbb">
+              <a href="" class="xb11">小米移动电源2</a>
+              <span class="xb22">双向快冲，高密度锂聚合物电芯</span>
+              <span class="xb33">79元</span>
+            </div>
+        </div>
+        <div class="tj1 yinying">
+            <a href="" class="noborder">
+                <img src="img/tj4.png" alt="">
+            </a>
+            <div class="xbb">
+              <a href="" class="xb11">小米手环 2</a>
+              <span class="xb22">OLED 显示屏幕，升级计步算法</span>
+              <span class="xb33">149元</span>
+            </div> 
+        </div>
+        <div class="zuihou1 yinying" >
+            <a href="" class="noborder lastt">
+               <img src="img/tj5.png" alt="">
+            </a>
+            <div class="xbb">
+              <a href="" class="xb11 ">米家扫地机器人</a>
+              <span class="xb22">智能路径规划，扫得干净扫得快</span>
+              <span class="xb33">1699元</span>
+            </div> 
+        </div>
+      </ul> -->
+    </div>
+    </div>
+    <!-- 为你推荐结束 -->
+    <!-- 热评产品 -->
+    <div class="rpcp">
+    <div class="main maintj">
+        <div class="section sectiontj">
+        <span class="zt3">热评产品</span>
+        <!-- <div class="hezi">
+            <div class="hz-left"></div>
+            <div class="hz-right"></div>
+            <a href="" class="jt-left"></a> 
+            <a href="" class="jt-right"></a>  
+        </div> -->
+      </div>
+      <div class="sp">
+        <div class="reping yinying">
+            <a href="" class="noborder">
+                <img src="img/rp1.png" alt=""> 
+            </a>
+            <div class="spbbb">
+              <a href="" class="sp1111">样子好可爱，特别是转来转去时很有趣。让它休眠时它就会把头转过去背对着你了，唤醒它又会自动转回来。你叫它，它也会把头.</a>
+              <div class="sp2222">来自于 随风 的评价</div>
+              <div class="sp3333">
+                <span class="xiaobai">米家小白智能摄像机</span>
+                <span class="jiage">399起</span>
+                </div>
+            </div>
+        </div>
+        <div class="reping yinying">
+            <a href="" class="noborder ">
+                <img src="img/rp2.png" alt=""> 
+            </a>
+            <div class="spbbb">
+              <a href="" class="sp1111">包装很让人感动，样式也很可爱，做出的饭全家人都很喜欢，超爱五星！手机控制还不是太熟练，最主要是没有连接</a>
+              <div class="sp2222">来自于 HZG 的评价</div>
+              <div class="sp3333">
+                <span class="xiaobai">米家压力IH电饭煲</span>
+                <span class="jiage">999元</span>
+                </div>
+            </div>
+        </div>
+        <div class="reping yinying">
+            <a href="" class="noborder">
+                <img src="img/rp3.png" alt=""> 
+            </a>
+            <div class="spbbb">
+              <a href="" class="sp1111">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固。</a>
+              <div class="sp2222">来自于 子书雁 的评价 </div>
+              <div class="sp3333">
+                <span class="xiaobai">90分旅行箱 20寸</span>
+                <span class="jiage">299元</span>
+                </div>
+            </div>
+        </div>
+        <div class="reping-teshu yinying">
+            <a href="" class="noborder">
+                <img src="img/rp4.png" alt="">
+            </a>
+            <div class="spbbb">
+              <a href="" class="sp1111">超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是那一句小米？？小米为发烧而生</a>
+              <div class="sp2222">OLED 来自于 HZG 的评价</div>
+              <div class="sp3333">
+                <span class="xiaobai">小米随身蓝牙音箱</span>
+                <span class="jiage">69元</span>
+                </div>
+            </div> 
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- 热评产品结束 -->
+    <!-- 内容开始 -->
+    <div class="nrks">
+    <div class="main mainnr">
+      <div class="section sectiontj">
+        <span class="zt3">内容</span>
+      </div>
+      <div class="sp">
+        <div class="nrpl yinying" id="nrpltp1">
+          <div class="nr-boxx">
+            <div class="nr-box active"> 
+              <div class="nrwzi">
+                 <span class="nrwzw">图书</span>
+                <a href="" class="nrwz1">哈利·波特与被诅咒的孩子</a>
+                <a  href="" class="nrwz2">“哈利·波特”第八个故事中文版震撼</a>
+                <a  href="" class="nrwz22">来袭！特别彩排版剧本！</a>
+                <a href="" class="nrwz3">29.37元</a>
+                <div class="nrpicture nrpicture1">
+                    <a href="" >
+                      <img src="img/nr1.png" alt="">  
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="nr-box"> 
+              <div class="nrwzi">
+                 <span class="nrwzw">图书</span>
+                <a href="" class="nrwz1">哈利·波特与被诅咒的孩子</a>
+                <a  href="" class="nrwz2">“哈利·波特”第八个故事中文版震撼</a>
+                <a  href="" class="nrwz22">来袭！特别彩排版剧本！</a>
+                <a href="" class="nrwz3">29.37元</a>
+                <div class="nrpicture nrpicture1">
+                    <a href="" >
+                      <img src="img/tushu1-1.png" alt="">  
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="nr-box"> 
+              <div class="nrwzi">
+                 <span class="nrwzw">图书</span>
+                <a href="" class="nrwz1">哈利·波特与被诅咒的孩子</a>
+                <a  href="" class="nrwz2">“哈利·波特”第八个故事中文版震撼</a>
+                <a  href="" class="nrwz22">来袭！特别彩排版剧本！</a>
+                <a href="" class="nrwz3">29.37元</a>
+                <div class="nrpicture nrpicture1">
+                    <a href="" >
+                      <img src="img/tushu1-2.jpg" alt="">  
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div> 
+             <div class="yuandian">
+                <div class="yuandian2 active" ></div>
+                <div class="yuandian2"></div>
+                <div class="yuandian2"></div>
+            </div>
+            <div class="xiangyou">&lt;</div>
+            <div class="xiangyou2">&gt;</div>
+        </div>
+        <div class="nrpl yinying" id="nrpltp2">
+          <div class="nr-boxx">
+            <div class="nr-box active">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwzt">MIUI 主题</span>
+                <a href="" class="nrwz1">夏日狂想</a>
+                <a  href="" class="nrwz2">官方主题新画风，原来你是这样的</a>
+                <a  href="" class="nrwz22">小清新！</a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-2">
+                  <a href="" >
+                    <img src="img/nr2.jpg" alt=""> 
+                  </a>
+              </div>
+            </div>
+            <div class="nr-box">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwzt">MIUI 主题</span>
+                <a href="" class="nrwz1">夏日狂想</a>
+                <a  href="" class="nrwz2">官方主题新画风，原来你是这样的</a>
+                <a  href="" class="nrwz22">小清新！</a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-2">
+                  <a href="" >
+                    <img src="img/tushu2-1.jpg" alt=""> 
+                  </a>
+              </div>
+            </div>
+            <div class="nr-box">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwzt">MIUI 主题</span>
+                <a href="" class="nrwz1">夏日狂想</a>
+                <a  href="" class="nrwz2">官方主题新画风，原来你是这样的</a>
+                <a  href="" class="nrwz22">小清新！</a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-2">
+                  <a href="" >
+                    <img src="img/tushu2-2.jpg" alt=""> 
+                  </a>
+              </div>
+            </div>
+            <div class="nr-box">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwzt">MIUI 主题</span>
+                <a href="" class="nrwz1">夏日狂想</a>
+                <a  href="" class="nrwz2">官方主题新画风，原来你是这样的</a>
+                <a  href="" class="nrwz22">小清新！</a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-2">
+                  <a href="" >
+                    <img src="img/tushu2-3.jpg" alt=""> 
+                  </a>
+              </div>
+            </div>
+          </div>
+            <div class="xiangyou">&lt;</div>
+            <div class="xiangyou2">&gt;</div>
+            <div class="yuandian-1">
+                <div class="yuandian2 active"></div>
+                <div class="yuandian2"></div>
+                <div class="yuandian2"></div>
+                <div class="yuandian2"></div>
+            </div>
+        </div>
+        <div class="nrpl yinying" id="nrpltp3">
+          <div class="nr-boxx">
+            <div class="nr-box active">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwyx">游戏</span>
+                <a href="" class="nrwz1">米柚手游模拟器</a>
+                <a  href="" class="nrwz2">在电脑上玩遍小米所有手游</a>
+                <a  href="" class="nrwz22"></a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-3">
+                  <a href="" >
+                    <img src="img/nr3.png" alt=""> 
+                  </a>
+              </div>
+            </div>
+            <div class="nr-box">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwyx">游戏</span>
+                <a href="" class="nrwz1">米柚手游模拟器</a>
+                <a  href="" class="nrwz2">在电脑上玩遍小米所有手游</a>
+                <a  href="" class="nrwz22"></a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-3">
+                  <a href="" >
+                    <img src="img/tushu3-1.jpg" alt=""> 
+                  </a>
+              </div>
+            </div>
+            <div class="nr-box">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwyx">游戏</span>
+                <a href="" class="nrwz1">米柚手游模拟器</a>
+                <a  href="" class="nrwz2">在电脑上玩遍小米所有手游</a>
+                <a  href="" class="nrwz22"></a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-3">
+                  <a href="" >
+                    <img src="img/tushu3-2.jpg" alt=""> 
+                  </a>
+              </div>
+            </div>
+            <div class="nr-box">
+              <div class="nrwzi">
+                 <span class="nrwzw nrwzwyx">游戏</span>
+                <a href="" class="nrwz1">米柚手游模拟器</a>
+                <a  href="" class="nrwz2">在电脑上玩遍小米所有手游</a>
+                <a  href="" class="nrwz22"></a>
+                <a href="" class="nrwz3">免费</a>
+              </div>
+              <div class="nrpicture-3">
+                  <a href="" >
+                    <img src="img/tushu2-3.jpg" alt=""> 
+                  </a>
+              </div>
+            </div>
+          </div>
+            <div class="xiangyou">&lt;</div>
+            <div class="xiangyou2">&gt;</div>
+            <div class="yuandian-2">
+                <div class="yuandian2 active"></div>
+                <div class="yuandian2"></div>
+                <div class="yuandian2"></div>
+                <div class="yuandian2"></div>
+            </div>
+        </div>
+        <div class="nrpl-teshu yinying" id="nrpltp4">
+          <div class="nr-boxx">
+              <div class="nr-box active">
+                <div class="nrwzi">
+                   <span class="nrwzw nrwzwyy">应用</span>
+                  <a href="" class="nrwz1">2017金米奖</a>
+                  <a  href="" class="nrwz2">最优秀的应用和游戏</a>
+                  <a  href="" class="nrwz22"></a>
+                  <a href="" class="nrwz3"></a>
+                </div> 
+                <div class="nrpicture-4">
+                    <a href="" >
+                      <img src="img/nr4.png" alt=""> 
+                    </a>
+                </div>
+              </div>
+              <div class="nr-box">
+                <div class="nrwzi">
+                   <span class="nrwzw nrwzwyy">应用</span>
+                  <a href="" class="nrwz1">2017金米奖</a>
+                  <a  href="" class="nrwz2">最优秀的应用和游戏</a>
+                  <a  href="" class="nrwz22"></a>
+                  <a href="" class="nrwz3"></a>
+                </div> 
+                <div class="nrpicture-4">
+                    <a href="" >
+                      <img src="img/tushu4-1.png" alt=""> 
+                    </a>
+                </div>
+              </div>
+              <div class="nr-box">
+                <div class="nrwzi">
+                   <span class="nrwzw nrwzwyy">应用</span>
+                  <a href="" class="nrwz1">2017金米奖</a>
+                  <a  href="" class="nrwz2">最优秀的应用和游戏</a>
+                  <a  href="" class="nrwz22"></a>
+                  <a href="" class="nrwz3"></a>
+                </div> 
+                <div class="nrpicture-4">
+                    <a href="" >
+                      <img src="img/tushu4-2.png" alt=""> 
+                    </a>
+                </div>
+              </div>
+              <div class="nr-box">
+                <div class="nrwzi">
+                   <span class="nrwzw nrwzwyy">应用</span>
+                  <a href="" class="nrwz1">2017金米奖</a>
+                  <a  href="" class="nrwz2">最优秀的应用和游戏</a>
+                  <a  href="" class="nrwz22"></a>
+                  <a href="" class="nrwz3"></a>
+                </div> 
+                <div class="nrpicture-4">
+                    <a href="" >
+                      <img src="img/tushu4-3.jpg" alt=""> 
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="xiangyou">&lt;</div>
+            <div class="xiangyou2">&gt;</div>
+            <div class="yuandian-3">
+                <div class="yuandian2 active"></div>
+                <div class="yuandian2"></div>
+                <div class="yuandian2"></div>
+                <div class="yuandian2"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- 内容结束 -->
+    <!-- 视频开始 -->
+     <div class="spks">
+    <div class="main mainsp">
+      <div class="section sectiontj">
+        <span class="zt3">视频</span>
+      </div>
+      <div class="sp">
+        <div class="spnr yinying">
+            <a href="" class="sppicture sppicture1">
+              <!-- <img src="img/view1.png" alt="">  -->
+            </a>
+            <div class="spwzi">
+              <a href="" class="spwz1">小米Note 4X 环岛挑战</a>
+              <span class="spwzw">看看我们关于超长续航的疯狂想法</span>
+            </div>
+        </div>
+        <div class="spnr yinying">
+            <a href="" class="sppicture sppicture2">
+              <!-- <img src="img/view2.png" alt="" class="abcd">  -->
+            </a>
+            <div class="spwzi">
+                <a href="" class="spwz1">小米之家里发生了一件怪事
+                </a>
+              <span class="spwzw">World Order星机械人受邀访问地球</span>
+            </div>   
+        </div>
+        <div class="spnr yinying">
+            <a href="" class="sppicture sppicture3 ">
+                <!-- <img src="img/view3.png" alt="">  -->
+            </a>
+            <div class="spwzi">
+               <a href="" class="spwz1">小米MIX 概念手机背后的故事</a>
+              <span class="spwzw">雷总亲自讲述小米MIX的诞生</span>
+            </div>  
+        </div>
+        <div class="spnr-teshu yinying">
+             <a href="" class="sppicture sppicture4">
+                <!-- <img src="img/view4.png" alt=""> -->
+            </a>
+            <div class="spwzi">
+                <a href="" class="spwz1">一面科技,一面艺术</a>
+              <span class="spwzw">梁朝伟讲述双面人生</span>
+            </div> 
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- 视频结束 -->
+    <!-- 底部 -->
+    <footer>
+      <div class="footer1">
+        <div class="footer-top">
+          <div class="footer-wx">
+            <div class="footer-yy">
+            <a href="" class="weixiu-box">
+              <span class="weixiu">&#xe605;</span>
+              <span class="weixiu-ziti">预约维修服务</span>
+            </a>
+            </div>
+            <div class="footer-yy">
+            <a href="" class="weixiu-box">
+              <span class="weixiu">&#xe60e;</span>
+              <span class="weixiu-ziti">7天无理由退货</span>
+            </a>
+            </div>
+            <div class="footer-yy">
+            <a href="" class="weixiu-box">
+              <span class="weixiu">&#xe606;</span>
+              <span class="weixiu-ziti">15天免费换货</span>
+            </a>
+            </div>
+            <div class="footer-yy">
+            <a href="" class="weixiu-box">
+              <span class="weixiu">&#xe778;</span>
+              <span class="weixiu-ziti">满150元包邮</span>
+            </a>
+            </div>
+            <div class="footer-wxts">
+            <a href="" class="weixiu-box">
+              <span class="weixiu">&#xe60a;</span>
+              <span class="weixiu-ziti">520余家售后网店</span>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-center">
+          <div class="footer-center1">
+            <div class="footer-center-left">
+              <div class="bangzhu">
+                <div class="bangzhu-box">帮助中心</div>
+                <div class="bangzhu-box">服务支持</div>
+                <div class="bangzhu-box">线下门店</div>
+                <div class="bangzhu-box">关于小米</div>
+                <div class="bangzhu-box">关注我们</div>
+                <div class="bangzhu-box">特色服务</div>
+              </div>
+              <div class="bangzhu bangzhu2">
+                <a href="" class="bangzhu-box bangzhu-box1">账户管理</a>
+                <a href="" class="bangzhu-box bangzhu-box1">售后政策</a>
+                <a href="" class="bangzhu-box bangzhu-box1">小米之家</a>
+                <a href="" class="bangzhu-box bangzhu-box1">了解小米</a>
+                <a href="" class="bangzhu-box bangzhu-box1">新浪微博</a>
+                <a href="" class="bangzhu-box bangzhu-box1">F 码通道</a>
+              </div>
+              <div class="bangzhu bangzhu3 ">
+                <a href="" class="bangzhu-box bangzhu-box1">购物指南</a>
+                <a href="" class="bangzhu-box bangzhu-box1">自助服务</a>
+                <a href="" class="bangzhu-box bangzhu-box1">服务网点</a>
+                <a href="" class="bangzhu-box bangzhu-box1">加入小米</a>
+                <a href="" class="bangzhu-box bangzhu-box1">小米部落</a>
+                <a href="" class="bangzhu-box bangzhu-box1">礼物码
+                </a>
+              </div>
+              <div class="bangzhu bangzhu3">
+                <a href="" class="bangzhu-box bangzhu-box1">订单操作</a>
+                <a href="" class="bangzhu-box bangzhu-box1">相关下载</a>
+                <a href="" class="bangzhu-box bangzhu-box1">零售网点</a>
+                <a href="" class="bangzhu-box bangzhu-box1">联系我们</a>
+                <a href="" class="bangzhu-box bangzhu-box1">官方微信</a>
+                <a href="" class="bangzhu-box bangzhu-box1">防伪查询</a>
+              </div>
+            </div>
+            <div class="footer-center-right">
+                <div class="shuzihh">400-100-5678</div>
+                <p>周一至周日 8:00-18:00<br />（仅收市话费）</p>
+                <a href="" class="xiaoshikefu">
+                 <div class="xiaoxi">&#xe60f;</div>
+                <div class="kefu">24小时在线客服</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-box">
+            <div class="footer-bottom-box1">
+              <div class="footer-bottom-logo"></div>
+              <div class="footer-bottom-box2">
+                   <ul class="footer-bottom-box2">
+                      <li class="first"><a href="">小米商城</a></li>
+                     <li><a href="">MIUI</a></li>
+                      <li><a href="">米聊</a></li>
+                     <li><a href="">游戏</a></li>
+                   <li><a href="">多看书城</a></li>
+                   <li><a href="">小米路由器</a></li>
+                   <li><a href="">视频电话</a></li>
+                   <li><a href="">小米天猫店</a></li>
+                   <li><a href="">小米淘宝直营店</a></li>
+                  <li><a href="">小米网盟</a></li>
+                  <li><a href="">小米移动</a></li>
+                  <li><a href="">隐私政策</a></li>
+                 <li class="last"><a href="">Select Region</a></li>
+               </ul>  
+               <p class="banquandizhi">©<a href="">mi.com</a> 京ICP证110507号 <a href="">京ICP备10046444号</a> <a href="">京公网安备11010802020134号</a> <a href="">京网文[2014]0059-0009号</a><br>
+               违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试 </p>
+              </div>
+            <div class="footer-bottom-box3">
+              <a href="" class="banquan1"></a>
+              <a href="" class="banquan2"></a>
+              <a href="" class="banquan3"></a>
+              <a href="" class="banquan4"></a>
+            </div> 
+            
+            </div> 
+
+      </div>
+
+          </div>
+          <div class="footer-last">探索黑科技，小米为发烧而生</div>
+            
+        </div>
+       
+    </footer>
+    <!-- 底部结束 -->
+        
+    </body>
+    
+</html>
+    

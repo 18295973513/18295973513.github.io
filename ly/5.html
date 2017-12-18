@@ -6,41 +6,138 @@
 	<link rel="stylesheet" href="css/5.css">
 	<link rel="stylesheet" href="iconfont/iconfont.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
-	<script src="js/rem2.js"></script>
+	<script src="js/rem.js"></script>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
 	<script src="js/iscroll.js"></script>
 </head>
 <body>
 	<div id="header">
        <div class="head-left">
-           <a href="index.html">
+           <a href="2.html">
                <div class="icon-fanhui"></div>
            </a>
        </div>
        <div class="head-mid">
-           <span>旅行安全</span>
+           <span>亚洲</span>
        </div>
        <div class="head-right">
-           <!-- <a href="" class="icon-gerenzhongxinxia">
-           </a> -->
+           <a href="10.html" class="icon-gerenzhongxinxia">
+           </a>
        </div>   
     </div>
-    <ul class="list">
-    	<li>
-    		<a href="12.html" class="icon-yuebing39-copy">
-    			<span>新闻</span>
-    		</a>
-    	</li>
-    	<!-- <li>
-    		<a href="fly.html" class="icon-yuebing39-copy">
-    			<span>驻外使领馆信息</span>
-    		</a>
-    	</li> -->
-    	<li>
-    		<a href="fly.html" class="icon-yuebing39-copy">
-    			<span>旅行安全指南</span>
-    		</a>
-    	</li>
-    </ul>
+    <div id="wrapper">
+	    <div id="scoller">
+		    <ul class="list">
+		    	<li>
+		    		<a href="6.html">
+		    			<div class="pic">
+		    				<img src="img/jin1.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>泰国</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin2.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>日本</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin3.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>新加坡</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin4.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>马来西亚</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin5.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>文莱</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin6.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>印度</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin1.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>越南</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin2.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>韩国</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+		    			<div class="pic">
+		    				<img src="img/jin4.jpg" alt="">
+		    			</div>
+		    			<div class="text">
+		    				<span>老挝</span>
+		    				<span class="icon-jinru"></span>
+		    			</div>
+		    		</a>
+		    	</li>
+		    </ul>
+		</div>
+	</div>
 </body>
 </html>
+<script>
+    $(function(){
+        var myScroll = new IScroll('#wrapper', {  
+        mouseWheel: true,  
+        scrollbars: false
+        })  
+    })
+</script>

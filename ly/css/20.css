@@ -1,0 +1,175 @@
+/*
+* @Author: yan
+* @Date:   2017-10-07 10:30:24
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-07 10:53:58
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	/* background: #f4f4f4; */
+	background: white;
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh-46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	/* background: white; */
+	background: #282828;
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: 0.01em solid #ccc;
+}
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+	/* color: #282828; */
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	/* color: #282828; */
+	line-height: 0.96em;
+	text-align: center;
+	color: #fff;
+
+}
+.head-right{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+
+	/* color: #282828; */
+}
+.pinglun{
+	width: 100%;
+	height: 1.84em;
+	background: white;
+	padding: 0.3em;
+	border-bottom: 0.03em solid #dfdfdf;
+}
+.p-text{
+	display: flex;
+	justify-content: flex-start;
+}
+.p-text .icon-yuebing39-copy{
+	font-family: "iconfont";
+	font-size: 1em;
+	margin-right: 0.3em;
+}
+.p-text .icon-yuebing39-copy p{
+	font-size: 0.2em;
+	color: #535353;
+	text-align: center;
+}
+.p-word p:first-of-type{
+	font-size: 0.28em;
+	color: #535353;
+	margin-bottom: 2.2em;
+}
+.p-word p:last-of-type{
+	font-size: 0.28em;
+	color: #999;
+}
+.foot{
+	z-index: 20;
+	width: 100%;
+	height: 1em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2em 0.3em;
+	background: #f6f6f6;
+}
+.input{
+	width: 5.6em;
+	height: 100%;
+}
+input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5em;
+	padding-left: 0.6em;
+	font-size: 0.3em;
+	line-height: 0.66em;
+	border: 0.01em solid #ccc;
+}
+input:focus{
+	outline: none;
+}
+.btn{
+	width: 1.18em;
+	height: 0.55em;
+}
+button{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 0;
+	border-radius: 0.4em;
+	background: #ed323c;
+	color: white;
+}

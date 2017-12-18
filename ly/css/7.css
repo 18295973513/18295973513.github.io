@@ -1,133 +1,37 @@
-@import url('base.css');
-body,html,section,nav{
+/*
+* @Author: yan
+* @Date:   2017-10-06 13:55:38
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-06 14:35:50
+*/
+*{
 	margin: 0;
 	padding: 0;
-	display: block;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
 }
 body{
-	background-color: #f3f4f4;
-}
-ul,li,dl,ol,dt,dd{
-	list-style: none;
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	/* background: #f4f4f4; */
+	background: white;
 }
 img{
 	border: 0;
 }
-a{
-	text-decoration: none;
-}
-div{
-	margin: 0;
-    padding: 0;
-    outline: none;
-    display: block;
-}
-.header{	
-	position: relative;
-    padding: 0 .20rem;
-    height: .64rem;
-    background: #00a076;
-    color: #fff;
-    line-height: .64rem;
-    display: flex;
-    align-items: center;
-    z-index: 999;
-}
-.back{
-	width: .20rem;
-    height: .17rem;
-    margin: 0 .32rem 0 0;
-    background: url('../img/black.svg') no-repeat;
-    background-size: 100%;
-}
-.center{
-	font-size: .2rem;
-}
-.lists{
-	padding: 0 .30rem;
-	background: #00a076;
-}
-.list{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	height: .60rem;
-	line-height: .60rem;
-	font-size: .14rem;
-	text-align: center;
-}
-.list>li{
-	width: 30%;
-}
-.list>li>a{
-	color: #fff;
-}
-.active{
-	border-bottom:.04rem solid #fff;
-}
-
-.datu{
-	width: 100%;
-	height: 2.00rem;
-	margin-bottom: .10rem;
-	position: relative;
-}
-.datu>#zhezhao{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: rgba(0, 0, 0, 0.6);
-	z-index: 21;
-}
-.datu a,.datu img{
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-.wenzi{
-	width: 100%;
-	position: absolute;
-	bottom: 50%;
-	margin-bottom: -.30rem!important;
-	color: #fff;
-	z-index: 999;
-	text-align: center;
-}
-.wenzi>h4{
-	font-size: .20rem;
-	line-height: .30rem;
-}
-.wenzi>p{
-	text-align: center;
-	font-size: .16rem;
-	line-height:.30rem;
-}
-body{
-	overflow: hidden;
-}
-.iScrollHorizontalScrollbar{
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: .10rem;
-	height: 100%;
-}
-.iScrollIndicator{
-	width: 100%;
-	height: .10rem;
-	background: #666;
-}
 #wrapper {
 	position: absolute;
 	z-index: 1;
-	top: 99.25px;
+	top: 46px;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: calc(100vh - 99.25px);
+	height: calc(100vh-46px);
+	/* position: relative; */
+	/* overflow: hidden; */
 }
 
 #scroller {
@@ -137,4 +41,110 @@ body{
 	transform: translateZ(0);
 	user-select: none;
 	text-size-adjust: none;
+}
+#header{
+	background: white;
+	/* background: #282828; */
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #282828;
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	color: #282828;
+	line-height: 0.96em;
+	text-align: center;
+}
+.head-right{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #282828;
+}
+.back{
+	margin-top: 0.96em;
+	width: 100%;
+	height: 12.38em;
+	position: relative;
+}
+.back img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.back a{
+	display: block;
+	width: 2.82em;
+	height: 1em;
+	border-radius: 0.5em;
+	border: 0.01em solid #fff;
+	position: absolute;
+	bottom: 1.97em;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+.back p:first-of-type{
+	font-size: 0.78em;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 4.53em;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.back p:nth-of-type(2){
+	position: absolute;
+	top: 5.8em;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	color: white;
+	font-size: 0.42em;
+	text-align: center;
+}
+.back a span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.28em;
+	color: #fff;
+	text-align: center;
+	line-height: 3em;
 }

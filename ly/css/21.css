@@ -1,0 +1,168 @@
+/*
+* @Author: yan
+* @Date:   2017-10-07 10:57:04
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-07 11:12:47
+*/
+/*
+* @Author: yan
+* @Date:   2017-10-07 10:30:24
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-07 10:53:58
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	/* background: #f4f4f4; */
+	background: white;
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh-46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	/* background: white; */
+	background: #282828;
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: 0.01em solid #ccc;
+}
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+	/* color: #282828; */
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	/* color: #282828; */
+	line-height: 0.96em;
+	text-align: center;
+	color: #fff;
+
+}
+.head-right{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+
+	/* color: #282828; */
+}
+.foot{
+	margin-top: 0.96em;
+	width: 100%;
+	height: 5.3em;
+	background: #fff;
+	padding: 0 0.52em 0;
+}
+.foot-h{
+	height: 1.2em;
+	width: 100%;
+	padding-top: 0.38em;
+	border-bottom: 0.03em solid #dfdfdf;
+}
+.foot-h a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.foot-h a div{
+	font-size: 0.46em;
+	color: #5e5d58;
+	font-weight: bold;
+}
+.foot-h a .icon-jinru{
+	font-size: 0.4em;
+	color: #5e5d58;
+	font-family: "iconfont";
+}
+.foot-a{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 0.24em;
+}
+.foot-a .icon-yuebing39-copy{
+	font-family: "iconfont";
+	font-size: 1.2em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+.foot-dec{
+	padding-top: 0.05em;
+	width: 100%;
+	height: 100%;
+	border-bottom: 0.01em solid #ccc;
+	padding-bottom: 0.2em;
+}
+.foot-dec span{
+	display: block;
+	font-size: 0.32em;
+	color: #646464;
+	font-weight: bold;
+	margin-bottom: 0.39em;
+}
+.foot-dec p{
+	font-size: 0.3em;
+	color: #999;
+}

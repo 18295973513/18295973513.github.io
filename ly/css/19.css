@@ -1,0 +1,121 @@
+/*
+* @Author: yan
+* @Date:   2017-10-07 00:06:41
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-31 18:25:59
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	/* background: #f4f4f4; */
+	background: white;
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh-46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	background: white;
+	/* background: #282828; */
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: 0.01em solid #ccc;
+}
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #282828;
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	color: #282828;
+	line-height: 0.96em;
+	text-align: center;
+}
+.head-right{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #282828;
+}
+.list{
+	/* margin-bottom: 0.96em; */
+	width: 100%;
+	/* padding-left: 0.4em; */
+}
+.list li{
+	width: 100%;
+	height: 1.2em;
+	border-bottom: 0.01em solid #ccc;
+	padding: 0 0.4em;
+}
+.list li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0.4em 0.7em 0.4em 0;
+}
+.list p{
+	display: block;
+	font-size: 0.3em;
+	color: black;
+	font-weight: bold;
+	line-height: 2em;
+}

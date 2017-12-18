@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/1.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/iscroll.js"></script>
+</head>
+<body>
+	<!-- head -->
+   <div id="header">
+	   <div class="head-left">
+	       <a href="9.html">
+	           <div class="icon-sousuo"></div>
+	       </a>
+	   </div>
+	   <div class="head-mid">
+           <a href="" class="hot">推荐</a>
+           <a href="2.html">锦囊</a>
+	   </div>
+	   <div class="head-right">
+	       <a href="10.html" class="icon-gerenzhongxinxia">
+	       </a>
+	   </div>	
+	</div>
+
+	<!-- 推荐部分 -->
+	<div id="wrapper">
+	    <div id="scoller">
+		   <!-- banner -->
+		    <div class="swiper-container">
+				<div class="banner swiper-wrapper">
+					<a href="" class="swiper-slide">
+						<img src="img/ban2.jpg" alt="">
+					</a>
+					<a href="" class="swiper-slide">
+						<img src="img/ban3。jpg.jpg" alt="">
+					</a>
+					<a href="" class="swiper-slide">
+						<img src="img/ban4.jpg" alt="">
+					</a>
+					<a href="" class="swiper-slide">
+						<img src="img/ban1.jpg" alt="">
+					</a>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- neirong -->
+			<div class="neirong">
+				<a href="16.html" class="anquan">
+					<div class="text">
+						<p>旅行安全</p>
+						<p>顺利出发安全回家</p>
+					</div>
+					<div class="pic">
+						<div class="icon-yuebing39-copy"></div>
+					</div>
+				</a>
+				<a href="" class="anquan">
+					<div class="text">
+						<p>签证频道</p>
+						<p>全球签证快速查询</p>
+					</div>
+					<div class="pic">
+						<div class="icon-yuebing39-copy"></div>
+					</div>
+				</a>
+			</div>
+			<!-- 正文 -->
+			<div>
+				<a href="3.html" class="word">
+					<div class="pic">
+						<img src="img/text1.jpg" alt="">
+					</div>
+					<div class="title">
+						<p>摄影实用技术指南</p>
+						<p>手把手教摄影</p>
+						<p>2017-10-10·小天</p>
+					</div>
+				</a>
+				<a href="" class="word">
+					<div class="pic">
+						<img src="img/text2.jpg" alt="">
+					</div>
+					<div class="title">
+						<p>摄影实用技术指南</p>
+						<p>手把手教摄影</p>
+						<p>2017-10-10·小天</p>
+					</div>
+				</a>
+				<a href="" class="word">
+					<div class="pic">
+						<img src="img/text3.jpg" alt="">
+					</div>
+					<div class="title">
+						<p>摄影实用技术指南</p>
+						<p>手把手教摄影</p>
+						<p>2017-10-10·小天</p>
+					</div>
+				</a>
+				<a href="" class="word">
+					<div class="pic">
+						<img src="img/text4.jpg" alt="">
+					</div>
+					<div class="title">
+						<p>摄影实用技术指南</p>
+						<p>手把手教摄影</p>
+						<p>2017-10-10·小天</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+<script>
+	$(function(){
+		var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    	})
+    	var myScroll = new IScroll('#wrapper', {  
+    	mouseWheel: true,  
+    	scrollbars: false
+    	})  
+	})
+</script>

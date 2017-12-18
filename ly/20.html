@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/20.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/iscroll.js"></script>
+</head>
+<body>
+	<div id="header">
+       <div class="head-left">
+           <a href="3.html">
+               <div class="icon-fanhui"></div>
+           </a>
+       </div>
+       <div class="head-mid">
+           <span>全部评论</span>
+       </div>
+       <div class="head-right">
+           <!-- <a href="" class="icon-caidan">
+           </a> -->
+       </div>   
+    </div>
+    <div id="wrapper">
+	    <div id="scoller">
+    		<div class="pinglun">
+		    	<div class="p-text">
+		    		<div class="icon-yuebing39-copy">
+		    			<p>穷游锦囊</p>
+		    		</div>
+		    		<div class="p-word">
+		    			<p>很有用，希望学到知识</p>
+		    			<p>39分钟前</p>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<div class="foot">
+		<div class="input">
+			<input type="text" placeholder="说点什么">
+		</div>
+		<div class="btn">
+			<button>
+				发送
+			</button>
+		</div>
+	</div>	
+</body>
+</html>
+<script>
+    $(function(){
+        var myScroll = new IScroll('#wrapper', {  
+        mouseWheel: true,  
+        scrollbars: false
+        })  
+    })
+</script>

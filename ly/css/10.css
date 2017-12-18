@@ -1,217 +1,37 @@
-@import url('base.css');
-body,html,section,nav{
+/*
+* @Author: yan
+* @Date:   2017-10-06 17:28:05
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-31 19:04:23
+*/
+*{
 	margin: 0;
 	padding: 0;
-	display: block;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
 }
 body{
-	background-color: #f3f4f4;
-}
-ul,li,dl,ol,dt,dd{
-	list-style: none;
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	background: #f4f4f4;
+	/* background: white; */
 }
 img{
 	border: 0;
 }
-a{
-	text-decoration: none;
-}
-div{
-	margin: 0;
-    padding: 0;
-    outline: none;
-    display: block;
-}
-.header{	
-	position: relative;
-    padding: 0 .20rem;
-    height: .64rem;
-    background: #00a076;
-    color: #fff;
-    line-height: .64rem;
-    display: flex;
-    align-items: center;
-    z-index: 999;
-}
-.back{
-	width: .20rem;
-    height: .17rem;
-    margin: 0 .32rem 0 0;
-    background: url('../img/black.svg') no-repeat;
-    background-size: 100%;
-}
-.center{
-	font-size: .2rem;
-}
-.city-list{
-	display: block;
-	padding-left: .10rem;
-	background: #fff;
-}
-.city-list li{
-	height: .80rem;
-	display: flex;
-	padding: .15rem .10rem .15rem 0;
-	border-bottom:.01rem solid #e6e8ea;
-/* 	margin-bottom: .12rem; */
-}
-.list-left{
-	width: .80rem;
-	height: .80rem;
-
-}
-.list-left img{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-.list-right{
-	width: 80%;
-	padding-left:.10rem;
-	padding-top: .16rem;
-}
-.wda{
-	width: 100%;
-	height: .20rem;
-	line-height: .20rem;
-	font-size: .16rem;
-	color: #222;
-	display: flex;
-	justify-content: space-between;
-}
-.wda>span{
-	display: block;
-}
-.icon-pinglun{
-	font-family: "iconfont";
-}
-.help{
-	height: .40rem;
-	line-height: .50rem;
-	font-size: .16rem;
-	color: #ccc;
-}
-#white{
-	background: #fff;
-}
-
-.qiongyou{
-	width: 100%;
-	height: auto;
-	padding: .10rem .10rem;
-	background: #fff;
-	display: flex;
-	border-bottom:.01rem solid #ccc;
-	margin-bottom: .12rem;
-}
-.qiongyou-left{
-	width: 15%;
-	height: 100%;
-
-}
-.qiongyou-left img{
-	border-radius: 50%;
-	display: block;
-	width: .36rem;
-	height: .36rem;
-}
-.qiongyou-right{
-	display: block;
-	width: 85%;
-}
-.qiongyou-right>span{
-	display: block;
-	font-size: .14rem;
-	color: #ccc;
-}
-.qiongyou-right>h4{
-	display: block;
-	margin-top: .10rem;
-	font-size: .16rem;
-	color: #222;
-}
-.huati,.huati>a{
-	margin-top: .10rem;
-	width:.80rem;
-	height: .80rem;
-}
-#huati{
-	width: 100%;
-	height: .80rem;
-	display: flex;
-}
-#huati img{
-	margin-right:.06rem;
-	width:.80rem;
-	height: .80rem;
-}
-.huati img{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-.huodong{
-	height: .20rem;
-	line-height: .20rem;
-	display: flex;
-	justify-content: space-between;
-	margin-top: .10rem;
-
-}
-.huodong>span{
-	display: block;
-	color: #0AB27B;
-	font-size: .14rem;
-}
-.huodong-right{
-	width: 1.30rem;
-	padding-right: .10rem;
-	display: flex;
-	justify-content: space-between;
-}
-.shijian{
-	width: .84rem;
-	font-size: .14rem;
-	color: #ccc;
-
-}
-.icon-shijian,.icon-pinglun{
-	font-family: "iconfont";
-}
-.shijian2{
-	width: .45rem;
-	font-size: .14rem;
-	color: #ccc;
-	display: flex;
-	line-height: .20rem;
-}
-#qiongyou{
-	height: .88rem;
-}
-
-body{
-	overflow: hidden;
-}
-.iScrollHorizontalScrollbar{
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 10px;
-	height: 100%;
-}
-.iScrollIndicator{
-	width: 100%;
-	height: 10px;
-	background: #666;
-}
 #wrapper {
 	position: absolute;
 	z-index: 1;
-	top: 64px;
+	top: 46px;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: calc(100vh - 64px);
+	height: calc(100vh-46px);
+	/* position: relative; */
+	/* overflow: hidden; */
 }
 
 #scroller {
@@ -221,4 +41,167 @@ body{
 	transform: translateZ(0);
 	user-select: none;
 	text-size-adjust: none;
+}
+#header{
+	background: black;
+	/* background: #282828; */
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	color: #fff;
+	line-height: 0.96em;
+	text-align: center;
+}
+.head-right{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #fff;
+}
+.log{
+	display: block;
+	margin-top: 0.96em;
+	width: 100%;
+	height: 1.6em;
+	background: white;
+	padding: 0.4em;
+	display: flex;
+	border-bottom: 0.01em solid #ccc;
+	justify-content: space-between;
+}
+.tou{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.touxiang{
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	background: #f6f6f6;
+	margin-right: 0.2em;
+}
+.icon-gerenzhongxinxia{
+	width: 100%;
+	height: 100%;
+	font-family: "iconfont";
+	font-size: 0.35em;
+	text-align: center;
+	line-height: 2em;
+	color: #7a7a7a;
+}
+.tou span{
+	font-size: 0.3em;
+	color: #7a7a7a;
+	line-height: 2.3em;
+}
+.log .deng{
+	display: block;
+	width: 0.63em;
+	height: 0.35em;
+}
+.log .deng span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.3em;
+	color: #ed3a43;
+	line-height: 2.3em;	
+}
+.load{
+	margin-bottom: 0.2em;
+	width: 100%;
+	height: 1.8em;
+	background: white;
+	padding: 0.38em 0.65em;
+	display: flex;
+	justify-content: space-between;
+}
+.load a{
+	font-family: "iconfont";
+	display: block;
+	width: 1.8em;
+	height: 100%;
+	font-size: 0.7em;
+	color: #535353;
+	text-align: center;
+}
+.load a span{
+	margin-top: 0.2em;
+	display: block;
+	width: 100%;
+	font-size: 0.24em;
+}
+.want{
+	overflow: hidden;
+	width: 100%;
+	height: 8.78em;
+	background: white;
+}
+.want p{
+	display: block;
+	margin-top: 10.02em;
+	font-size: 0.3em;
+	color: #333;
+	text-align: center;
+	margin-bottom: 0.3em;
+}
+.want span{
+	display: block;
+	font-size: 0.26em;
+	color: #979797;
+	text-align: center;
+	margin-bottom: 0.8em;
+}
+.want a{
+	display: block;
+	width: 3.2em;
+	height: 0.9em;
+	margin: 0 auto;
+	border-radius: 0.1em;
+	border: 0.01em solid #ed323c;
+}
+.want a div{
+	width: 100%;
+	height: 100%;
+	font-size: 0.3em;
+	color: #ed323c;
+	text-align: center;
+	line-height: 2.9em;
 }

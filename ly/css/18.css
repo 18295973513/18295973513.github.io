@@ -1,0 +1,187 @@
+/*
+* @Author: yan
+* @Date:   2017-10-06 23:29:47
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-06 23:36:09
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
+}
+body{
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	background: #f4f4f4;
+	/* background: white; */
+}
+img{
+	border: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh-46px);
+	/* position: relative; */
+	/* overflow: hidden; */
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform: translateZ(0);
+	user-select: none;
+	text-size-adjust: none;
+}
+#header{
+	background: white;
+	/* background: #282828; */
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: 0.01em solid #ccc;
+}
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #282828;
+}
+.head-mid{
+	/* width: 2.4rem; */
+	height: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.head-mid span{
+	align-self: center;
+	font-size: 0.3em;
+	color: #282828;
+	line-height: 0.96em;
+	text-align: center;
+}
+.head-right{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.icon-caidan{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	color: #282828;
+}
+.xia{
+	margin-top: 0.24em;
+	width: 100%;
+	height: 1.2em;
+	border-top: 0.01em solid #d9d9d9;
+	border-bottom: 0.01em solid #d9d9d9;
+	margin-bottom: 0.19em;
+	background: white;
+	padding: 0.3em;
+}
+.xia a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+.icon-icon202{
+	width: 1em;
+	font-family: "iconfont";
+	color: #ed323c;
+	font-size: 0.5em;
+	align-self: center;
+	/* line-height: 1.2em; */
+	margin-right: 0.45em;
+}
+.xia p{
+	font-size: 0.3em;
+	align-self: center;
+	/* line-height: 1.4em; */
+	color: black;
+	margin-right: 10.5em;
+}
+.xia .shu{
+	width: 1.3em;
+	align-self: center;
+	display: flex;
+	justify-content: space-between;
+}
+.shu span{
+	font-size: 0.26em;
+	color: #999;
+	align-self: center;
+
+}
+.shu .icon-jinru{
+	font-family: "iconfont";
+	color: #999;
+	font-size: 0.32rem;
+	align-self: center;
+}
+.book{
+	width: 100%;
+	padding: 0 0.2em;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.arc{
+	display: block;
+	margin-bottom: 0.3rem;
+	width: 45%;
+	height: 3.6em;
+	/* border: 0.01em solid #999; */
+}
+.arc .pic{
+	width: 100%;
+	height: 80%;
+	background: white;
+}
+.arc .pic img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.arc .text{
+	width: 100%;
+	height: 20%;
+	background: white;
+	padding: 0.2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.arc .text p{
+	font-size: 0.3em;
+	color: black;
+	text-align: center;
+	margin-bottom: 0.2em;
+}

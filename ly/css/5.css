@@ -1,8 +1,8 @@
 /*
 * @Author: yan
-* @Date:   2017-10-06 22:40:44
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-06 00:04:43
+* @Date:   2017-10-06 11:03:49
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-06 12:29:21
 */
 *{
 	margin: 0;
@@ -16,8 +16,8 @@ body{
 	border: 0;
 	/* height: auto; */
 	/* overflow: hidden; */
-	background: #f4f4f4;
-	/* background: white; */
+	/* background: #f4f4f4; */
+	background: white;
 }
 img{
 	border: 0;
@@ -29,7 +29,7 @@ img{
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: calc(100vh - 46px);
+	height: calc(100vh-46px);
 	/* position: relative; */
 	/* overflow: hidden; */
 }
@@ -43,10 +43,9 @@ img{
 	text-size-adjust: none;
 }
 #header{
-	background: #00a076;
-	color: #fff;
+	background: #282828;
 	width: 100%;
-	height: 1.1rem;
+	height: 0.96rem;
 	display: flex;
 	position: fixed;
     justify-content: space-between;
@@ -55,7 +54,7 @@ img{
 	z-index: 10;
 }
 .head-left{
-	width: 1.1rem;
+	width: 0.96rem;
 	height: 100%;
 	padding: 0.27em 0.32em;
 }
@@ -68,7 +67,7 @@ img{
 	display: block;
 	font-family: 'iconfont';
 	font-size: .4rem;
-	color:#fff;
+	color: #fff;
 }
 .head-mid{
 	/* width: 2.4rem; */
@@ -79,12 +78,12 @@ img{
 .head-mid span{
 	align-self: center;
 	font-size: 0.3em;
-	color: #fff;
-	line-height: 1.1em;
+	color: white;
+	line-height: 0.96em;
 	text-align: center;
 }
 .head-right{
-	width: 1.1rem;
+	width: 0.96rem;
 	height: 100%;
 	padding: 0.27em 0.32em;
 }
@@ -95,36 +94,48 @@ img{
 	color: #fff;
 }
 .list{
-	margin-top: 1.1em;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 0.3em 0.2em;
+	margin-top: 0.2em;
+	width: 100%;
 }
 .list li{
-	width: 3.45em;
-	height: 3.8em;
-	border: 0.01em solid #ccc;
-	border-radius: 0.5em;
-	background: white;
-	margin-bottom: 0.2em;
+	width: 100%;
+	height: 1.5em;
+	border-bottom: 0.01em solid #d9d9d9;
+	padding: 0.3em 0.3em;
 }
 .list li a{
 	display: block;
 	width: 100%;
 	height: 100%;
-	padding-top: 0.79em;
+	display: flex;
+	justify-content: flex-start;
 }
-.icon-yuebing39-copy{
-	font-family: "iconfont";
-	font-size: 1.26em;
-	text-align: center;
-	color: #343434;
+.list .pic{
+	align-self: center;
+	width: 0.6em;
+	height: 0.9em;
+	margin-right: 0.23em;
 }
-.list span{
+.list .pic img{
 	display: block;
-	font-size: 0.22em;
-	color: #343434;
-	text-align: center;
-	margin-top: 1.14em;
+	width: 100%;
+	height: 100%;
+}
+.list .text{
+	width: 6em;
+	align-self: center;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.list .text span{
+	display: block;
+	height: 100%;
+	font-size: 0.4em;
+	color: #2c1d1d;
+	line-height: 2.5em;
+	text-align: left;
+}
+.icon-jinru{
+	font-family: "iconfont";
 }

@@ -1,224 +1,38 @@
-@import url('base.css');
-body,html,section,nav{
+/*
+* @Author: yan
+* @Date:   2017-10-06 19:01:10
+* @Last Modified by:   yan
+* @Last Modified time: 2017-10-06 21:09:36
+*/
+*{
 	margin: 0;
 	padding: 0;
-	display: block;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+    box-sizing: border-box;
 }
 body{
-	background-color: #fff;
-}
-ul,li,dl,ol,dt,dd{
-	list-style: none;
+	border: 0;
+	/* height: auto; */
+	/* overflow: hidden; */
+	/* background: #f4f4f4; */
+	background: white;
 }
 img{
 	border: 0;
 }
-a{
-	text-decoration: none;
-}
-div{
-	margin: 0;
-    padding: 0;
-    outline: none;
-    display: block;
-}
-/* toubu */
-.header{	
-	position: relative;
-	padding: 0 .20rem;
-    height: .64rem;
-    background: #00a076;
-    color: #fff;
-    line-height: .64rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-}
-.back>a{
-	display: block;
-	color:  #25d9b2;
-	font-size: .2rem;
-	line-height: .64rem;
-}
-.back{
-	width: 2.00rem;
-    display: flex;
-    justify-content: space-between;  
-}
-.user,.searchs{
-	position: relative;
-	/* float: right; */
-	height: 100%;
-	width: .30rem;
-}
-.user>a>img,.searchs>a{
-	position: absolute;
-	left: 0;
-	top: 50%;
-	margin-top: -.15rem;
-	border-radius: 50%;
-	width: .30rem;
-	height: .30rem;
-	float: left;	
-	color: #fff;
-}
-.icon-sousuo{
-	display: block;
-	font-family: 'iconfont';
-	font-size: .2rem;
-	line-height: .24rem;
-}
-.back .white{
-	color: #fff;
-}
-.datu{
-	width: 100%;
-	height: 1.40rem;
-}
-.datu a,.datu img{
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-/* 板块 */
-.login{
-	position: relative;
-	display: flex;
-	color: #00a076;
-	height: .48rem;
-	line-height: .46rem;
-	text-align: center;
-	background: #fff;
-	z-index: 999;
-}
-.selected{
-	width:50%; 
-	border-bottom:.02rem solid #0AB27B;
-	font-size: .16rem;
-	color: #222;
-	
-}
-.dxin{
-	width:50%; 
-	color: #222;
-	border-bottom:.01rem solid #ccc;
-	font-size: .16rem;
-}
-/* 热门城市 */
-.city{
-	display: flex;
-	background: #fff;
-}
-.city-left{
-	display: block;
-	width: 30%;
-	/* display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between; */
-	text-align: center;
-	background: #f3f4f4;
-}
-.rem{
-	position: relative;
-	width: 100%;
-	display: block;
-	height: .42rem;
-	line-height: .42rem;
-	font-size: .14rem;
-	color: #222;
-	text-align: center;
-	border-bottom:.01rem solid #e6e8ea;
-}
-.city-left .rems{
-	border-bottom:.00rem solid #e6e8ea;
-}
-.city-right{
-    width: 100%;
-    display: block;
-	background: #fff;
-}
-.city-list{
-	display: block;
-	padding-left: .10rem;
-}
-.city-list li,.city-list li>a{
-	height: .50rem;
-	display: flex;
-	
-}
-.city-list li>a{
-	width: 100%;
-	padding-right: .05rem;
-}
-.city-list li{
-	padding: .15rem .10rem .15rem 0;
-	border-bottom:.01rem solid #e6e8ea;
-}
-.list-left{
-	width: .50rem;
-	height: .50rem;
-
-}
-.list-left img{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-.list-right{
-	width: 80%;
-	padding-left:.10rem;
-}
-.wda{
-	width: 100%;
-	height: .20rem;
-	line-height: .20rem;
-	font-size: .16rem;
-	color: #222;
-	display: flex;
-	justify-content: space-between;
-}
-.wda>span{
-	display: block;
-}
-.icon-pinglun{
-	font-family: "iconfont";
-}
-.help{
-	height: .40rem;
-	line-height: .40rem;
-	font-size: .14rem;
-	color: #ccc;
-}
-#white{
-	background: #fff;
-}
-body{
-	overflow: hidden;
-}
-.iScrollHorizontalScrollbar{
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 10px;
-	height: 100%;
-}
-.iScrollIndicator{
-	width: 100%;
-	height: 10px;
-	background: #666;
-}
 #wrapper {
 	position: absolute;
 	z-index: 1;
-	top: 114px;
+	top: 46px;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: calc(100vh - 114px);
+	height: calc(100vh-46px);
+	/* position: relative; */
+	/* overflow: hidden; */
 }
-
 #scroller {
 	position: absolute;
 	z-index: 1;
@@ -227,16 +41,150 @@ body{
 	user-select: none;
 	text-size-adjust: none;
 }
-.swiper-container {
-    width: 100%;
-    height: 3.00rem;
-    margin: .20rem auto;
+#header{
+	background: white;
+	/* background: #282828; */
+	width: 100%;
+	height: 0.96rem;
+	display: flex;
+	position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	/* border-bottom: 0.01em solid #ccc; */
 }
-.swiper-slide {
-    text-align: center;
-    font-size: .18rem;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.head-left{
+	width: 0.96rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-left a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-fanhui{
+	display: block;
+	font-family: 'iconfont';
+	font-size: .4rem;
+	/* color: #ed323c; */
+	color: #282828;
+}
+.head-right{
+	width: 1.4rem;
+	height: 100%;
+	padding: 0.27em 0.32em;
+}
+.head-right a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.head-right a span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.34em;
+	color: #ed323c;
+}
+.log{
+	margin-top: 0.96em;
+	width: 100%;
+	height: 12.3em;
+	overflow: hidden;
+}
+.icon-yuebing39-copy{
+	font-family: "iconfont";
+	font-size: 1.2em;
+	width: 1.1em;
+	height: 1.1em;
+	margin: 1.36em auto 0.8em;
+}
+.text{
+	width: 6.34em;
+	/* height: 3.1em; */
+	margin: 0 auto;
+}
+.text .i-text{
+	width: 100%;
+	height: 0.9em;
+	margin-bottom: 0.12em;
+}
+.text input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #f3f3f3;
+	border: none;
+	padding: 0.3em 0.6em;
+	border-radius: 0.3em;
+	/* font-size: 0.26em; */
+}
+input:focus{
+	outline: none;
+}
+.i-sub{
+	margin-top: 0.32em;
+	width: 100%;
+	height: 0.9em;
+	margin-bottom: 0.48em;
+}
+button{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.3em;
+	border: 0.01em solid #999;
+	background: white;
+	text-align: center;
+	line-height: 2.9em;
+	color: #999;
+}
+button:focus{
+	outline: none;
+}
+.other{
+	width: 6.34em;
+	height: 0.25em;
+	margin: 0.8em auto 1.5em;
+	display: flex;
+	padding: 0 0.9em;
+	justify-content: space-between;
+}
+.other .ot{
+	height: 100%;
+	font-size: 0.24em;
+}
+.other .ot a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 0.85em;
+	color: #4c4c4c;
+}
+.more{
+	text-align: center;
+	color: #999;
+	font-size: 0.24em;
+	display: block;
+	margin-bottom: 2em;
+}
+.fang{
+	width: 6.34em;
+	height: 0.45em;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.fang div{
+	height: 100%;
+	width: 0.45em;
+}
+.icon-weibo,.icon-weixin,.icon-qq{
+	font-family: "iconfont";
+	font-size: 0.44em;
+	color: #ed323c;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
